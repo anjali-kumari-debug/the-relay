@@ -7,8 +7,28 @@ from typing import Any, Awaitable, Callable, Literal, Optional, Protocol
 
 PAPER_IDS = ("attention", "moshi", "hnet")
 
-# [attention p.3]  [moshi p.12]  [hnet p.7]  (also tolerates "pp." and "p. 3")
-CITATION_RE = re.compile(r"\[(attention|moshi|hnet)\s+p{1,2}\.\s*(\d+)\]", re.IGNORECASE)
+# One bracketed citation group. Canonical: [attention p.3]. Also tolerated, because the real model
+# produced them: "p. 3", "pp. 3-4", several pages "[attention p.1, p.8]", several papers
+# "[attention p.3; hnet p.8]", and gpt-oss's lenticular brackets 【attention p.3】.
+CITATION_RE = re.compile(r"[\[【]\s*(?:attention|moshi|hnet)\b[^\]】\n]{0,80}[\]】]", re.IGNORECASE)
+_CITE_INNER = re.compile(r"(attention|moshi|hnet)?[\s,;:]*\bp{1,2}\.?\s*(\d+)(?:\s*[-–]\s*(\d+))?", re.IGNORECASE)
+
+
+def parse_citations(text: str) -> list[tuple[str, int]]:
+    """All (paper_id, page) pairs cited in text, in order, de-duplicated. Page ranges expand."""
+    out: list[tuple[str, int]] = []
+    for m in CITATION_RE.finditer(text):
+        paper = None
+        for inner in _CITE_INNER.finditer(m.group(0)):
+            paper = (inner.group(1) or paper or "").lower()
+            if not paper:
+                continue
+            lo = int(inner.group(2))
+            hi = int(inner.group(3)) if inner.group(3) else lo
+            for pg in range(lo, min(hi, lo + 3) + 1):
+                if (paper, pg) not in out:
+                    out.append((paper, pg))
+    return out
 REFUSAL_PREFIX = "NOT_IN_PAPERS:"
 
 Source = Literal["real", "stand-in"]
