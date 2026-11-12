@@ -1,0 +1,319 @@
+[
+ {
+  "id": "q01",
+  "question": "In the attention paper, what Adam optimizer hyperparameters (beta1, beta2, epsilon) were used for training?",
+  "paper_ids": [
+   "attention"
+  ],
+  "expected_answer": "beta1 = 0.9, beta2 = 0.98, epsilon = 10^-9 (Adam). The learning-rate schedule uses warmup_steps = 4000, but that is a separate sentence.",
+  "gold_pages": [
+   7
+  ],
+  "evidence_quote": "We used the Adam optimizer [20] with β1 = 0.9, β2 = 0.98 and ϵ = 10−9.",
+  "should_refuse": false,
+  "trap": null,
+  "key_facts": [
+   "0.9",
+   "0.98"
+  ]
+ },
+ {
+  "id": "q02",
+  "question": "What single-model BLEU score does the Transformer (big) report for WMT 2014 English-to-French in the headline result (abstract and Table 2)?",
+  "paper_ids": [
+   "attention"
+  ],
+  "expected_answer": "41.8 (abstract and Table 2). Note that the Section 6.1 body text says BLEU 41.0 for the same big EN-FR model, so the paper is internally inconsistent; cite 41.8 and flag the discrepancy.",
+  "gold_pages": [
+   1,
+   8
+  ],
+  "evidence_quote": "establishes a new single-model state-of-the-art BLEU score of 41.8 after",
+  "should_refuse": false,
+  "trap": "The Section 6.1 text on p8 says 41.0 for the same model, so a keyword retriever matching 'English-to-French BLEU' can return either number.",
+  "key_facts": [
+   "41.8"
+  ]
+ },
+ {
+  "id": "q03",
+  "question": "In the Table 3 ablations (English-German dev set, newstest2013), how many BLEU points worse is single-head attention than the best attention setting?",
+  "paper_ids": [
+   "attention"
+  ],
+  "expected_answer": "0.9 BLEU worse (single-head row = 24.9 vs best = 25.8).",
+  "gold_pages": [
+   9
+  ],
+  "evidence_quote": "While single-head attention is 0.9 BLEU worse than the best setting",
+  "should_refuse": false,
+  "trap": "25.8 appears in the base-model row and in several head-count rows, so a retriever keyed on the number 25.8 lands on the wrong row.",
+  "key_facts": [
+   "0.9"
+  ]
+ },
+ {
+  "id": "q04",
+  "question": "What residual dropout rate did the Transformer (big) English-to-French model use, and how does it differ from the English-German big model?",
+  "paper_ids": [
+   "attention"
+  ],
+  "expected_answer": "Pdrop = 0.1 for EN-FR big, instead of 0.3 for EN-DE big (the Table 3 big row lists 0.3).",
+  "gold_pages": [
+   8,
+   9
+  ],
+  "evidence_quote": "dropout rate Pdrop = 0.1, instead of 0.3.",
+  "should_refuse": false,
+  "trap": "The base model also uses Pdrop = 0.1, so a retriever matching 'dropout 0.1' returns the base-model setting and misses the EN-FR exception.",
+  "key_facts": [
+   "0.1",
+   "0.3"
+  ]
+ },
+ {
+  "id": "q05",
+  "question": "What practical end-to-end latency does Moshi report, and what is its theoretical latency?",
+  "paper_ids": [
+   "moshi"
+  ],
+  "expected_answer": "200 ms in practice; theoretical latency 160 ms.",
+  "gold_pages": [
+   1
+  ],
+  "evidence_quote": "latency of 160ms, 200ms in practice",
+  "should_refuse": false,
+  "trap": "Other latency numbers are nearby: the 230 ms natural-conversation average (p2), and 640 ms and 240 ms delay-pattern latencies (p26), so a keyword retriever on 'latency' returns those instead of the 160/200 ms headline.",
+  "key_facts": [
+   "200",
+   "160"
+  ]
+ },
+ {
+  "id": "q06",
+  "question": "What are the Mimi codec's RVQ settings: number of quantizers Q, codebook size, frame rate, and bitrate?",
+  "paper_ids": [
+   "moshi"
+  ],
+  "expected_answer": "Q = 8 quantizers, codebook size NA = 2048, 12.5 Hz frame rate, 1.1 kbps.",
+  "gold_pages": [
+   10,
+   11
+  ],
+  "evidence_quote": "We use Q = 8 quantizers, each with a codebook size of NA = 2048.",
+  "should_refuse": false,
+  "trap": "The number 2048 also appears as Mimi's transformer MLP dimension (p10) and as Moshi's audio cardinality in Table 1 (p8), so a retriever matching '2048' returns the wrong fact.",
+  "key_facts": [
+   "8",
+   "2048",
+   "12.5",
+   "1.1"
+  ]
+ },
+ {
+  "id": "q07",
+  "question": "How many layers does the Depth Transformer in Moshi have, and what is its model dimension?",
+  "paper_ids": [
+   "moshi"
+  ],
+  "expected_answer": "6 layers; model dimension 1024 (Table 1; also 16 heads and MLP dimension 4096).",
+  "gold_pages": [
+   8,
+   14
+  ],
+  "evidence_quote": "As detailed in Table 1, the Depth Transformer used for Moshi has 6 layers",
+  "should_refuse": false,
+  "trap": "The Temporal Transformer in the same Table 1 has 32 layers and dimension 4096, so a retriever keyed on 'Transformer layers' pulls the wrong column.",
+  "key_facts": [
+   "6",
+   "1024"
+  ]
+ },
+ {
+  "id": "q08",
+  "question": "What is the size and pretraining token count of Helium, the text LLM backbone of Moshi?",
+  "paper_ids": [
+   "moshi"
+  ],
+  "expected_answer": "7B parameters, pretrained on 2.1T tokens.",
+  "gold_pages": [
+   3
+  ],
+  "evidence_quote": "We present Helium, a 7B-parameter text LLM that we pretrain on 2.1T tokens of",
+  "should_refuse": false,
+  "trap": null,
+  "key_facts": [
+   "7",
+   "2.1"
+  ]
+ },
+ {
+  "id": "q09",
+  "question": "What value of the ratio-loss weight alpha does H-Net fix in all of its experiments?",
+  "paper_ids": [
+   "hnet"
+  ],
+  "expected_answer": "alpha = 0.03.",
+  "gold_pages": [
+   8
+  ],
+  "evidence_quote": "We fixed 𝛼= 0.03 in all experiments in this paper",
+  "should_refuse": false,
+  "trap": null,
+  "key_facts": [
+   "0.03"
+  ]
+ },
+ {
+  "id": "q10",
+  "question": "After how many training bytes does the byte-level 2-stage H-Net overtake the perplexity of the BPE-tokenized Transformer?",
+  "paper_ids": [
+   "hnet"
+  ],
+  "expected_answer": "After 30B training bytes (text on p4; Figure 3 annotation on p13).",
+  "gold_pages": [
+   4,
+   13
+  ],
+  "evidence_quote": "A byte-level 2-stage H-Net overtakes the perplexity of a strong tokenized Transformer after just 30B training bytes",
+  "should_refuse": false,
+  "trap": null,
+  "key_facts": [
+   "30"
+  ]
+ },
+ {
+  "id": "q11",
+  "question": "What compression target N0 is the 1-stage H-Net trained toward, and what bytes-per-innermost-chunk (BPIC) does it measure at Large scale?",
+  "paper_ids": [
+   "hnet"
+  ],
+  "expected_answer": "N0 = 6 (6-DC target); measured BPIC 4.8 at Large scale (4.7 at XL), per Table 1.",
+  "gold_pages": [
+   11
+  ],
+  "evidence_quote": "H-Net (1-stage) is our full H-Net method with DC learned end-to-end (Section 2.2) with compression target 𝑁0 = 6.",
+  "should_refuse": false,
+  "trap": "The space-like heuristic has BPIC 6.0 (p10 and Table 1), so a retriever keyed on 'six bytes per chunk' returns the heuristic rather than the learned 1-stage model's measured 4.8.",
+  "key_facts": [
+   "6",
+   "4.8"
+  ]
+ },
+ {
+  "id": "q12",
+  "question": "How many bytes per chunk does H-Net's learned dynamic chunking compress to, and how does that compare with BPE tokenizers?",
+  "paper_ids": [
+   "hnet"
+  ],
+  "expected_answer": "About 4.5-5 bytes per chunk, a resolution similar to BPE tokenizers.",
+  "gold_pages": [
+   3
+  ],
+  "evidence_quote": "chunking module naturally compresses data to a similar resolution as BPE tokenizers (4.5-5 bytes/chunk)",
+  "should_refuse": false,
+  "trap": "In H-Net, chunking means learned segmentation of raw bytes inside the network, not RAG document chunking into fixed-size or sentence-split windows; a naive retriever on 'chunking' returns document-chunking text.",
+  "key_facts": [
+   "4.5",
+   "5"
+  ]
+ },
+ {
+  "id": "q13",
+  "question": "What theoretical latency did Moshi settle on, and what acoustic delay was used during pretraining versus after finetuning?",
+  "paper_ids": [
+   "moshi"
+  ],
+  "expected_answer": "Theoretical latency 160 ms; acoustic delay 2 in pretraining and 1 after finetuning (Table 1 lists acoustic delay 2 for Moshi pretraining, 1 for post-training and fine-tuning phases).",
+  "gold_pages": [
+   8,
+   26
+  ],
+  "evidence_quote": "theoretical latency of 160ms by pretraining Moshi with an acoustic delay of 2 and finetuning it with an acoustic delay of 1",
+  "should_refuse": false,
+  "trap": "Page 26 also reports 640 ms and 240 ms latencies for other delay patterns, which a retriever on 'latency' may return instead.",
+  "key_facts": [
+   "160",
+   "2",
+   "1"
+  ]
+ },
+ {
+  "id": "q14",
+  "question": "How many training steps did the big Transformer take compared with the base model, and what EN-DE BLEU gap does Table 2 report between them?",
+  "paper_ids": [
+   "attention"
+  ],
+  "expected_answer": "Big: 300,000 steps vs base: 100,000 steps (3x). EN-DE BLEU 28.4 (big) vs 27.3 (base), a 1.1-point gap.",
+  "gold_pages": [
+   7,
+   8
+  ],
+  "evidence_quote": "The big models were trained for 300,000 steps",
+  "should_refuse": false,
+  "trap": null,
+  "key_facts": [
+   "300000",
+   "100000"
+  ]
+ },
+ {
+  "id": "q15",
+  "question": "What normalization placement does the original Transformer use after each sub-layer, and what does H-Net say modern LLMs use instead?",
+  "paper_ids": [
+   "attention",
+   "hnet"
+  ],
+  "expected_answer": "Attention paper: post-norm, LayerNorm(x + Sublayer(x)). H-Net (p8): modern LLMs use pre-normalization, departing from the post-normalization design; H-Net adds an RMSNorm at the end of each network component.",
+  "gold_pages": [
+   "attention:3",
+   "hnet:8"
+  ],
+  "evidence_quote": "LayerNorm(x + Sublayer(x)), where Sublayer(x) is the function implemented by the sub-layer",
+  "should_refuse": false,
+  "trap": "'Transformer' appears in all three papers, so a keyword search for Transformer normalization returns Moshi's Transformer layers; the answer requires joining the attention paper's p3 with H-Net's p8.",
+  "key_facts": [
+   "post",
+   "pre"
+  ]
+ },
+ {
+  "id": "q16",
+  "question": "What test-set (newstest2014) perplexity does the big Transformer achieve on English-German?",
+  "paper_ids": [
+   "attention"
+  ],
+  "expected_answer": "Not stated. The paper reports only per-wordpiece perplexity on the newstest2013 dev set (Table 3, big model PPL 4.33).",
+  "gold_pages": [],
+  "evidence_quote": null,
+  "should_refuse": true,
+  "trap": "Table 3 on p9 gives the big model's dev perplexity of 4.33, so a retriever on 'big model perplexity' returns that number as if it were a test-set figure.",
+  "key_facts": []
+ },
+ {
+  "id": "q17",
+  "question": "What end-to-end latency did Moshi measure when running on a laptop with a user-grade GPU?",
+  "paper_ids": [
+   "moshi"
+  ],
+  "expected_answer": "Not stated. The laptop/user-grade GPU mention (p31) is only motivation for quantization; the only latency figures are 160 ms theoretical and 200 ms practical.",
+  "gold_pages": [],
+  "evidence_quote": null,
+  "should_refuse": true,
+  "trap": "The laptop phrase on p31 and the 200 ms practical figure on p1 both appear in the paper, so a retriever may combine them into a laptop latency the paper never measured.",
+  "key_facts": []
+ },
+ {
+  "id": "q18",
+  "question": "How many GPU-hours (or wall-clock hours) did training the H-Net 2-stage XL model take?",
+  "paper_ids": [
+   "hnet"
+  ],
+  "expected_answer": "Not stated. H-Net reports a 100B-token FineWeb-Edu data budget and FLOP matching (p11), but no GPU-hours or wall-clock training time.",
+  "gold_pages": [],
+  "evidence_quote": null,
+  "should_refuse": true,
+  "trap": "The 100B-token budget and FLOP-matched language on p11 look like compute figures; a retriever matching 'training' and 'compute' returns them, but they are not training time.",
+  "key_facts": []
+ }
+]
