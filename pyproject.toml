@@ -1,0 +1,9 @@
+[project]
+name = "relay"
+version = "0.1.0"
+requires-python = ">=3.13"
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "."]
+asyncio_mode = "auto"
+testpaths = ["tests"]
