@@ -4,3 +4,6 @@ __pycache__/
 *.pyc
 .pytest_cache/
 outputs/scratch/
+outputs/cache/
+report/raw_transcripts/
+report/conversation_history.md
