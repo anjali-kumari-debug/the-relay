@@ -1,0 +1,50 @@
+{
+  "_doc": {
+    "_status": "CALIBRATED 2026-11-12 from outputs/calibration.jsonl (80 real requests, openai/gpt-oss-20b, free tier). limits: measured (rpm 30 from 429 body, tpm 8000 from header+429, rpd 1000 from header); tpd 200000 = published value, NOT observed. ttft: real TTFT p50 404/519 ms and p95 551/911 ms (small/passage prompts); Groq-reported queue_time p50 318-344 ms is most of it. prompt_ms_per_1k_tokens: Groq usage.prompt_time 105 ms for 1805 prompt tokens. inter_chunk: real gap p50 0.07 ms / p95 3.7 ms, ~1 token per chunk, decode ~1000 tok/s. overload: 12 concurrent tiny requests -> total latency 388..2375 ms (all accepted), fitted knee 2, 1.17x per extra in-flight. failures: NONE observed in 80 real requests; p_5xx / p_slow_success here are SYNTHETIC and labelled so in the write-up.",
+    "seed": "Seed for random.Random. All per-request random draws (failure die, TTFT, chunk gaps) are made at admission time, so a run is reproducible given the same arrival order.",
+    "model_name": "Echoed in responses when the request has no model.",
+    "limits": "mode: 'token_bucket' (default) or 'sliding_window'. token_bucket: rpm and tpm are CONTINUOUSLY REFILLING buckets (capacity = rpm or tpm, refill = capacity/60 per second, start full), matching measured Groq free-tier behaviour. A request needs request-bucket >= 1 and token-bucket >= requested, where requested = prompt_tokens(chars/4) + max_tokens; both are deducted at admission, and when the response completes the token bucket is refunded max_tokens - actual completion tokens (capped at capacity), so the effective cost is the actual usage. On failure: 429 'Limit L, Used X, Requested Y. Please try again in Zs' with Z = deficit / refill rate and retry-after = ceil(Z). x-ratelimit-remaining-tokens = floor(token level); x-ratelimit-reset-tokens = time until the token bucket is full (Go-style, e.g. '1.507s', '1m26.4s'). sliding_window: the old model, rpm/tpm are sliding 60 s windows with the reservation kept for 60 s (no refund). In both modes rpd/tpd are simple counters (reset only via POST /admin/reset); x-ratelimit-*-requests headers report the day counters. TPD check uses requested against actual tokens used so far; TPD usage is incremented by actual prompt+completion tokens when a response finishes.",
+    "day_reset_s": "Seconds after server start (or last reset) until day counters 'reset'; only used for retry-after / x-ratelimit-reset-requests on day-limit 429s.",
+    "ttft_ms": "Lognormal for time-to-first-content-token: {median, p95} in ms; mu=ln(median), sigma=ln(p95/median)/1.645. Added to prompt processing time.",
+    "inter_chunk_ms": "Lognormal for the gap between streamed content chunks: {median, p95} ms.",
+    "tokens_per_chunk": "Approx tokens per streamed content chunk (1 token = 4 chars).",
+    "prompt_ms_per_1k_tokens": "Extra time-to-first-token per 1000 prompt tokens (reported as usage.prompt_time).",
+    "overload": "knee_in_flight: number of concurrent requests the service handles at full speed. slowdown_per_extra: multiplier base; factor = slowdown_per_extra ** max(0, in_flight - knee_in_flight), applied to TTFT and chunk gaps, recomputed at each sleep from the CURRENT in-flight count.",
+    "max_in_flight": "Hard cap. Requests arriving when in_flight >= max_in_flight get HTTP 503 immediately (no queueing; limits are not consumed). 0 = unlimited.",
+    "failures": "SYNTHETIC fault injection, not observed Groq behaviour. p_5xx: HTTP 500 after admission. p_hang: sleep (up to 1 h) so the client times out. p_slow_success: success whose latencies are multiplied by slow_multiplier (long tail).",
+    "replay_bank": "JSONL path; lines {question_id, setting, text, tokens_out}. Matched on X-Relay-Question-Id + first letter of X-Relay-Setting (case-insensitive). Missing file = no bank.",
+    "fallback": "No bank hit: short answer citing the first '[paper p.N]' tag in the prompt, else 'NOT_IN_PAPERS: ...'."
+  },
+  "seed": 1234,
+  "model_name": "openai/gpt-oss-20b",
+  "limits": {
+    "mode": "token_bucket",
+    "rpm": 30,
+    "tpm": 8000,
+    "rpd": 1000,
+    "tpd": 200000
+  },
+  "day_reset_s": 86400,
+  "ttft_ms": {
+    "median": 420,
+    "p95": 800
+  },
+  "inter_chunk_ms": {
+    "median": 0.5,
+    "p95": 4.0
+  },
+  "tokens_per_chunk": 1,
+  "prompt_ms_per_1k_tokens": 58,
+  "overload": {
+    "knee_in_flight": 2,
+    "slowdown_per_extra": 1.17
+  },
+  "max_in_flight": 64,
+  "failures": {
+    "p_5xx": 0.01,
+    "p_hang": 0.0,
+    "p_slow_success": 0.03,
+    "slow_multiplier": 4.0
+  },
+  "replay_bank": "outputs/answer_bank.jsonl"
+}

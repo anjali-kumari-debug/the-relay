@@ -1,0 +1,8 @@
+{
+  "rpm": 30,
+  "tpm": 8000,
+  "rpd": 1000,
+  "tpd": 200000,
+  "source": "measured 2026-11-12 on free account, openai/gpt-oss-20b: rpm from 429 body 'RPM: Limit 30'; tpm from header x-ratelimit-limit-tokens=8000 and 429 body 'TPM: Limit 8000'; rpd from header x-ratelimit-limit-requests=1000; tpd NOT observed (no header, no TPD 429) - 200000 is the published docs value, low confidence",
+  "notes": "Groq refills both minute buckets continuously (x-ratelimit-reset-tokens = time to full; RPD resets 1 request per 86.4 s). TPM 'Requested' = prompt tokens + max_completion_tokens."
+}
