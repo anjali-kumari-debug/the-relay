@@ -1,0 +1,4 @@
+request_id,scenario,source,start_time,first_token_ms,total_ms,status,retries,tokens_in,tokens_out,retrieval_setting,answer_grade,question_id,queue_len_at_arrival,wait_ms,work_ms,retry_wait_ms,provider_ttft_ms,released_ms,outcome_detail
+325b71fa8a23,retrieval_eval,real,2026-11-12T11:05:47.897955+00:00,,50.0,ok,0,0,0,A:250w/k3/rerank=no,,q01,0,0.0,50.0,0.0,,50.0,refused_no_evidence
+f2a66727e9fd,retrieval_eval,real,2026-11-12T11:06:12.833557+00:00,361.2,1048.3,ok,0,2960,170,A:250w/k3/rerank=no,,q02,0,0.1,1048.3,0.0,587.7,1048.3,refused_verify
+b866cc44e690,retrieval_eval,real,2026-11-12T11:06:37.833836+00:00,526.0,548.3,ok,0,1532,86,A:250w/k3/rerank=no,,q03,0,0.0,548.3,0.0,521.6,548.3,answered

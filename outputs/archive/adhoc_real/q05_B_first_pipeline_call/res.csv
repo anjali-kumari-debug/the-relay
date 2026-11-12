@@ -1,0 +1,2 @@
+request_id,scenario,source,start_time,first_token_ms,total_ms,status,retries,tokens_in,tokens_out,retrieval_setting,answer_grade,question_id,queue_len_at_arrival,wait_ms,work_ms,retry_wait_ms,provider_ttft_ms,released_ms,outcome_detail
+e611eb4b4c1c,probe_pipeline,real,2026-11-12T10:50:23.784834+00:00,1049.6,1052.3,ok,0,2864,83,B:450w/k4/rerank=no,,q05,0,0.0,1052.3,0.0,1000.2,1052.3,refused_model

@@ -1,0 +1,4 @@
+request_id,scenario,source,start_time,first_token_ms,total_ms,status,retries,tokens_in,tokens_out,retrieval_setting,answer_grade,question_id,queue_len_at_arrival,wait_ms,work_ms,retry_wait_ms,provider_ttft_ms,released_ms,outcome_detail
+70448624353a,real_daily_exhausted,real,2026-11-12T11:49:12.922412+00:00,,103.2,rate_limited,0,0,0,B:450w/k4/rerank=no,,q01,0,0.0,103.2,0.0,,,provider_daily_limit
+d779375e48fd,real_daily_exhausted,real,2026-11-12T11:49:32.923749+00:00,,1.0,rate_limited,0,0,0,B:450w/k4/rerank=no,,q02,0,0.0,1.0,0.0,,,rejected_daily_budget
+73c9a3c45798,real_daily_exhausted,real,2026-11-12T11:49:52.923740+00:00,,2.2,rate_limited,0,0,0,B:450w/k4/rerank=no,,q03,0,0.0,2.1,0.0,,,rejected_daily_budget

@@ -1,0 +1,12 @@
+{"request_id": "e611eb4b4c1c", "t_ms": 0.0, "event": "arrive", "question_id": "q05", "scenario": "probe_pipeline", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "e611eb4b4c1c", "t_ms": 0.2, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "e611eb4b4c1c", "t_ms": 0.2, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "e611eb4b4c1c", "t_ms": 1.4, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "e611eb4b4c1c", "t_ms": 49.1, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "e611eb4b4c1c", "t_ms": 49.2, "event": "gate", "best_score": 0.7687, "threshold": 0.5, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "e611eb4b4c1c", "t_ms": 49.3, "event": "provider_start", "attempt": 0}
+{"request_id": "e611eb4b4c1c", "t_ms": 1049.5, "event": "first_token"}
+{"request_id": "e611eb4b4c1c", "t_ms": 1052.1, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 2864, "tokens_out": 83}
+{"request_id": "e611eb4b4c1c", "t_ms": 1052.2, "event": "verify_start"}
+{"request_id": "e611eb4b4c1c", "t_ms": 1052.2, "event": "verify_end", "ok": true, "is_refusal": true, "problems": []}
+{"request_id": "e611eb4b4c1c", "t_ms": 1052.3, "event": "done", "status": "ok", "outcome": "refused_model", "total_ms": 1052.3}

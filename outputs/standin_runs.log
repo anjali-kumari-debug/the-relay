@@ -1,0 +1,8 @@
+done daily_exhausted: daily_exhausted: 30 requests rate_limited=30 retries=0 peak_queue=0
+done overload_retry_off: overload_retry_off: 84 requests ok=43 rate_limited=41 retries=0 peak_queue=0
+done overload_retry_on: overload_retry_on: 84 requests ok=57 rate_limited=26 timeout=1 retries=34 peak_queue=1
+done steady: steady: 21 requests ok=21 retries=0 peak_queue=0
+done burst: burst: 30 requests ok=14 timeout=16 retries=0 peak_queue=17
+done sustained_overload: sustained_overload: 84 requests ok=73 timeout=11 retries=1 peak_queue=1
+done rpm_halved: rpm_halved: 21 requests ok=16 rate_limited=1 timeout=4 retries=1 peak_queue=0
+merged into outputs/results.csv from outputs/runs/20261112T171405

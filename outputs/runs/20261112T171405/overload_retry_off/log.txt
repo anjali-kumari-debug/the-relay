@@ -1,0 +1,2 @@
+overload_retry_off: 84 arrivals over ~900s (rate 5.59/min, capacity ~2.24/min, limits source: measured 2026-11-12 on free account, openai/gpt-oss-20b: rpm from 429 body 'RPM: Limit 30'; tpm from header x-ratelimit-limit-tokens=8000 and 429 body 'TPM: Limit 8000'; rpd from header x-ratelimit-limit-requests=1000; tpd NOT observed (no header, no TPD 429) - 200000 is the published docs value, low confidence)
+overload_retry_off: 84 requests ok=43 rate_limited=41 retries=0 peak_queue=0

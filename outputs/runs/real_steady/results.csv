@@ -1,0 +1,11 @@
+request_id,scenario,source,start_time,first_token_ms,total_ms,status,retries,tokens_in,tokens_out,retrieval_setting,answer_grade,question_id,queue_len_at_arrival,wait_ms,work_ms,retry_wait_ms,provider_ttft_ms,released_ms,outcome_detail
+34b1ea63351b,real_steady,real,2026-11-12T11:44:05.254360+00:00,474.7,535.3,ok,0,2990,90,B:450w/k4/rerank=no,,q01,0,0.0,535.3,0.0,471.2,535.3,answered
+ea4be7419126,real_steady,real,2026-11-12T11:44:35.256294+00:00,738.9,803.6,ok,0,2640,117,B:450w/k4/rerank=no,,q02,0,0.1,803.5,0.0,731.4,803.6,answered
+5ee182a6e871,real_steady,real,2026-11-12T11:45:05.256072+00:00,660.8,675.9,ok,0,3156,72,B:450w/k4/rerank=no,,q03,0,0.0,675.9,0.0,654.9,675.9,answered
+1f9f03e4ca85,real_steady,real,2026-11-12T11:45:35.255937+00:00,592.6,643.1,ok,0,3269,214,B:450w/k4/rerank=no,,q04,0,0.0,643.0,0.0,585.6,643.1,answered
+2d82196c31d2,real_steady,real,2026-11-12T11:46:05.253731+00:00,670.0,721.6,ok,0,2897,107,B:450w/k4/rerank=no,,q05,0,0.0,721.6,0.0,668.2,721.6,answered
+740aa79aa04f,real_steady,real,2026-11-12T11:46:35.255696+00:00,602.1,720.5,ok,0,2900,153,B:450w/k4/rerank=no,,q06,0,0.0,720.5,0.0,594.8,720.5,answered
+f6cfe14ff30b,real_steady,real,2026-11-12T11:47:05.255763+00:00,615.2,654.8,ok,0,2951,85,B:450w/k4/rerank=no,,q07,0,0.0,654.7,0.0,607.8,654.8,answered
+9e1891374183,real_steady,real,2026-11-12T11:47:35.255550+00:00,698.6,739.7,ok,0,2796,89,B:450w/k4/rerank=no,,q08,0,0.0,739.7,0.0,693.6,739.7,answered
+000f8812bc04,real_steady,real,2026-11-12T11:48:05.255426+00:00,664.7,706.5,ok,0,3098,78,B:450w/k4/rerank=no,,q09,0,0.0,706.5,0.0,658.7,706.5,answered
+3baccef4c579,real_steady,real,2026-11-12T11:48:35.255039+00:00,667.7,721.8,ok,0,3277,93,B:450w/k4/rerank=no,,q10,0,0.0,721.8,0.0,659.6,721.8,answered

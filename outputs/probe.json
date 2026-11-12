@@ -1,0 +1,334 @@
+{
+  "model": "openai/gpt-oss-20b",
+  "when": "2026-11-12T16:19:58+0530",
+  "runs": [
+    {
+      "include_reasoning": false,
+      "status": 200,
+      "headers": {
+        "date": "Thu, 12 Nov 2026 10:49:58 GMT",
+        "server": "cloudflare",
+        "x-groq-region": "bom",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "8000",
+        "x-ratelimit-remaining-requests": "999",
+        "x-ratelimit-remaining-tokens": "7799",
+        "x-ratelimit-reset-requests": "1m26.4s",
+        "x-ratelimit-reset-tokens": "1.507s",
+        "x-request-id": "req_01m77p1ve8ebksxgh70dwb53br"
+      },
+      "first_chunk_ms": 380.3409170068335,
+      "first_content_ms": 396.5951669961214,
+      "total_ms": 555.0635000108741,
+      "n_chunks": 70,
+      "first_chunks": [
+        {
+          "t_ms": 380.3,
+          "obj": {
+            "id": "chatcmpl-f6977f89-ba78-45b5-b1c3-1948911717cc",
+            "object": "chat.completion.chunk",
+            "created": 1794480598,
+            "model": "openai/gpt-oss-20b",
+            "system_fingerprint": "fp_996f667773",
+            "choices": [
+              {
+                "index": 0,
+                "delta": {
+                  "role": "assistant",
+                  "content": ""
+                },
+                "logprobs": null,
+                "finish_reason": null
+              }
+            ],
+            "x_groq": {
+              "id": "req_01m77p1ve8ebksxgh70dwb53br",
+              "seed": 381959208
+            }
+          }
+        },
+        {
+          "t_ms": 396.6,
+          "obj": {
+            "id": "chatcmpl-f6977f89-ba78-45b5-b1c3-1948911717cc",
+            "object": "chat.completion.chunk",
+            "created": 1794480598,
+            "model": "openai/gpt-oss-20b",
+            "system_fingerprint": "fp_996f667773",
+            "choices": [
+              {
+                "index": 0,
+                "delta": {
+                  "content": "Multi"
+                },
+                "logprobs": null,
+                "finish_reason": null
+              }
+            ]
+          }
+        },
+        {
+          "t_ms": 396.7,
+          "obj": {
+            "id": "chatcmpl-f6977f89-ba78-45b5-b1c3-1948911717cc",
+            "object": "chat.completion.chunk",
+            "created": 1794480598,
+            "model": "openai/gpt-oss-20b",
+            "system_fingerprint": "fp_996f667773",
+            "choices": [
+              {
+                "index": 0,
+                "delta": {
+                  "content": "\u2011"
+                },
+                "logprobs": null,
+                "finish_reason": null
+              }
+            ]
+          }
+        }
+      ],
+      "last_chunks": [
+        {
+          "t_ms": 552.9,
+          "obj": {
+            "id": "chatcmpl-f6977f89-ba78-45b5-b1c3-1948911717cc",
+            "object": "chat.completion.chunk",
+            "created": 1794480598,
+            "model": "openai/gpt-oss-20b",
+            "system_fingerprint": "fp_996f667773",
+            "choices": [
+              {
+                "index": 0,
+                "delta": {},
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "x_groq": {
+              "id": "req_01m77p1ve8ebksxgh70dwb53br",
+              "usage": {
+                "queue_time": 0.243663008,
+                "prompt_tokens": 81,
+                "prompt_time": 0.00447198,
+                "completion_tokens": 80,
+                "completion_time": 0.084433947,
+                "total_tokens": 161,
+                "total_time": 0.088905927,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 5
+                }
+              }
+            },
+            "usage": {
+              "queue_time": 0.243663008,
+              "prompt_tokens": 81,
+              "prompt_time": 0.00447198,
+              "completion_tokens": 80,
+              "completion_time": 0.084433947,
+              "total_tokens": 161,
+              "total_time": 0.088905927,
+              "completion_tokens_details": {
+                "reasoning_tokens": 5
+              }
+            }
+          }
+        },
+        {
+          "t_ms": 552.9,
+          "obj": {
+            "id": "chatcmpl-f6977f89-ba78-45b5-b1c3-1948911717cc",
+            "object": "chat.completion.chunk",
+            "created": 1794480598,
+            "model": "openai/gpt-oss-20b",
+            "system_fingerprint": "fp_996f667773",
+            "choices": [],
+            "usage": {
+              "queue_time": 0.243663008,
+              "prompt_tokens": 81,
+              "prompt_time": 0.00447198,
+              "completion_tokens": 80,
+              "completion_time": 0.084433947,
+              "total_tokens": 161,
+              "total_time": 0.088905927,
+              "completion_tokens_details": {
+                "reasoning_tokens": 5
+              }
+            },
+            "service_tier": "on_demand"
+          }
+        },
+        {
+          "t_ms": 552.9288329998963,
+          "raw": "[DONE]"
+        }
+      ],
+      "text": "Multi\u2011head attention is a neural\u2011network mechanism that projects the same query, key, and value vectors into several lower\u2011dimensional \u201cheads,\u201d performs scaled dot\u2011product attention in each head independently, and then concatenates and linearly transforms the results, allowing the model to jointly attend to information from multiple representation subspaces."
+    },
+    {
+      "include_reasoning": true,
+      "status": 200,
+      "headers": {
+        "date": "Thu, 12 Nov 2026 10:49:59 GMT",
+        "server": "cloudflare",
+        "x-groq-region": "bom",
+        "x-ratelimit-limit-requests": "1000",
+        "x-ratelimit-limit-tokens": "8000",
+        "x-ratelimit-remaining-requests": "998",
+        "x-ratelimit-remaining-tokens": "7706",
+        "x-ratelimit-reset-requests": "2m52.8s",
+        "x-ratelimit-reset-tokens": "2.205s",
+        "x-request-id": "req_01m77p1vyjer3txq5yqm5vcs9p"
+      },
+      "first_chunk_ms": 540.8279160037637,
+      "first_content_ms": 540.9770410042256,
+      "total_ms": 581.985833006911,
+      "n_chunks": 71,
+      "first_chunks": [
+        {
+          "t_ms": 540.8,
+          "obj": {
+            "id": "chatcmpl-2e1a89c1-8316-41bb-8a06-a7899f11e5ec",
+            "object": "chat.completion.chunk",
+            "created": 1794480599,
+            "model": "openai/gpt-oss-20b",
+            "system_fingerprint": "fp_f102a3179c",
+            "choices": [
+              {
+                "index": 0,
+                "delta": {
+                  "role": "assistant",
+                  "content": ""
+                },
+                "logprobs": null,
+                "finish_reason": null
+              }
+            ],
+            "x_groq": {
+              "id": "req_01m77p1vyjer3txq5yqm5vcs9p",
+              "seed": 1547357426
+            }
+          }
+        },
+        {
+          "t_ms": 540.9,
+          "obj": {
+            "id": "chatcmpl-2e1a89c1-8316-41bb-8a06-a7899f11e5ec",
+            "object": "chat.completion.chunk",
+            "created": 1794480599,
+            "model": "openai/gpt-oss-20b",
+            "system_fingerprint": "fp_f102a3179c",
+            "choices": [
+              {
+                "index": 0,
+                "delta": {
+                  "reasoning": "Need",
+                  "channel": "analysis"
+                },
+                "logprobs": null,
+                "finish_reason": null
+              }
+            ]
+          }
+        },
+        {
+          "t_ms": 540.9,
+          "obj": {
+            "id": "chatcmpl-2e1a89c1-8316-41bb-8a06-a7899f11e5ec",
+            "object": "chat.completion.chunk",
+            "created": 1794480599,
+            "model": "openai/gpt-oss-20b",
+            "system_fingerprint": "fp_f102a3179c",
+            "choices": [
+              {
+                "index": 0,
+                "delta": {
+                  "reasoning": " concise",
+                  "channel": "analysis"
+                },
+                "logprobs": null,
+                "finish_reason": null
+              }
+            ]
+          }
+        }
+      ],
+      "last_chunks": [
+        {
+          "t_ms": 581.8,
+          "obj": {
+            "id": "chatcmpl-2e1a89c1-8316-41bb-8a06-a7899f11e5ec",
+            "object": "chat.completion.chunk",
+            "created": 1794480599,
+            "model": "openai/gpt-oss-20b",
+            "system_fingerprint": "fp_f102a3179c",
+            "choices": [
+              {
+                "index": 0,
+                "delta": {},
+                "logprobs": null,
+                "finish_reason": "stop"
+              }
+            ],
+            "x_groq": {
+              "id": "req_01m77p1vyjer3txq5yqm5vcs9p",
+              "usage": {
+                "queue_time": 0.366152297,
+                "prompt_tokens": 81,
+                "prompt_time": 0.00388846,
+                "completion_tokens": 77,
+                "completion_time": 0.111255654,
+                "total_tokens": 158,
+                "total_time": 0.115144114,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 5
+                }
+              }
+            },
+            "usage": {
+              "queue_time": 0.366152297,
+              "prompt_tokens": 81,
+              "prompt_time": 0.00388846,
+              "completion_tokens": 77,
+              "completion_time": 0.111255654,
+              "total_tokens": 158,
+              "total_time": 0.115144114,
+              "completion_tokens_details": {
+                "reasoning_tokens": 5
+              }
+            }
+          }
+        },
+        {
+          "t_ms": 581.8,
+          "obj": {
+            "id": "chatcmpl-2e1a89c1-8316-41bb-8a06-a7899f11e5ec",
+            "object": "chat.completion.chunk",
+            "created": 1794480599,
+            "model": "openai/gpt-oss-20b",
+            "system_fingerprint": "fp_f102a3179c",
+            "choices": [],
+            "usage": {
+              "queue_time": 0.366152297,
+              "prompt_tokens": 81,
+              "prompt_time": 0.00388846,
+              "completion_tokens": 77,
+              "completion_time": 0.111255654,
+              "total_tokens": 158,
+              "total_time": 0.115144114,
+              "completion_tokens_details": {
+                "reasoning_tokens": 5
+              }
+            },
+            "service_tier": "on_demand"
+          }
+        },
+        {
+          "t_ms": 581.810375006171,
+          "raw": "[DONE]"
+        }
+      ],
+      "text": "Multi\u2011head attention is a neural\u2011network mechanism that projects queries, keys, and values into several lower\u2011dimensional \u201cheads,\u201d performs scaled dot\u2011product attention independently in each head, and then concatenates and linearly transforms the results, allowing the model to jointly attend to information from multiple representation subspaces."
+    }
+  ]
+}

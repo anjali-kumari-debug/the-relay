@@ -1,0 +1,1131 @@
+{"request_id": "cad546947f07", "t_ms": 0.0, "event": "arrive", "question_id": "q01", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "cad546947f07", "t_ms": 0.3, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "cad546947f07", "t_ms": 0.5, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "cad546947f07", "t_ms": 2.2, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "cad546947f07", "t_ms": 3.2, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "cad546947f07", "t_ms": 3.3, "event": "gate", "best_score": 0.3611, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "cad546947f07", "t_ms": 3.4, "event": "provider_start", "attempt": 0}
+{"request_id": "cad546947f07", "t_ms": 442.3, "event": "first_token"}
+{"request_id": "cad546947f07", "t_ms": 477.3, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 3132, "tokens_out": 98}
+{"request_id": "cad546947f07", "t_ms": 477.4, "event": "verify_start"}
+{"request_id": "cad546947f07", "t_ms": 477.8, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The paper used the Adam optimizer with the following hyperparameters: \u03b2\u2081\u202f=\u202f0.9, \u03b2\u2082\u202f=\u202f0.98, and \u03b5\u202f=\u202f10\u207b\u2079 [attention p.7]."}
+{"request_id": "cad546947f07", "t_ms": 477.8, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 477.9}
+{"request_id": "fe004ce84775", "t_ms": 0.0, "event": "arrive", "question_id": "q02", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "fe004ce84775", "t_ms": 1.5, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "fe004ce84775", "t_ms": 2.1, "event": "queue_exit", "admitted": true, "queued_ms": 0.1}
+{"request_id": "fe004ce84775", "t_ms": 2.8, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "fe004ce84775", "t_ms": 6.2, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "fe004ce84775", "t_ms": 6.9, "event": "gate", "best_score": 0.6803, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "fe004ce84775", "t_ms": 7.6, "event": "provider_start", "attempt": 0}
+{"request_id": "fe004ce84775", "t_ms": 741.1, "event": "first_token"}
+{"request_id": "fe004ce84775", "t_ms": 809.7, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 2701, "tokens_out": 103}
+{"request_id": "fe004ce84775", "t_ms": 809.9, "event": "verify_start"}
+{"request_id": "fe004ce84775", "t_ms": 810.3, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The Transformer (big) reports a single\u2011model BLEU score of **41.8** on the WMT\u202f2014 English\u2011to\u2011French test set, as stated in the abstract and shown in Table\u202f2. [attention p.1] [attention p.8]"}
+{"request_id": "fe004ce84775", "t_ms": 810.4, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 810.5}
+{"request_id": "dc3198f00a1e", "t_ms": 0.0, "event": "arrive", "question_id": "q03", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "dc3198f00a1e", "t_ms": 0.7, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "dc3198f00a1e", "t_ms": 1.2, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "dc3198f00a1e", "t_ms": 2.0, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "dc3198f00a1e", "t_ms": 4.4, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "dc3198f00a1e", "t_ms": 4.7, "event": "gate", "best_score": 0.8014, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "dc3198f00a1e", "t_ms": 5.0, "event": "provider_start", "attempt": 0}
+{"request_id": "dc3198f00a1e", "t_ms": 569.3, "event": "first_token"}
+{"request_id": "dc3198f00a1e", "t_ms": 617.9, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 3147, "tokens_out": 96}
+{"request_id": "dc3198f00a1e", "t_ms": 618.5, "event": "verify_start"}
+{"request_id": "dc3198f00a1e", "t_ms": 619.4, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "Single\u2011head attention is 0.9\u202fBLEU points worse than the best multi\u2011head setting on the English\u2011to\u2011German dev set (newstest2013) [attention p.8]"}
+{"request_id": "dc3198f00a1e", "t_ms": 619.8, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 619.9}
+{"request_id": "9d3293586af3", "t_ms": 0.0, "event": "arrive", "question_id": "q04", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "9d3293586af3", "t_ms": 0.8, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "9d3293586af3", "t_ms": 1.2, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "9d3293586af3", "t_ms": 2.4, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "9d3293586af3", "t_ms": 4.7, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "9d3293586af3", "t_ms": 5.0, "event": "gate", "best_score": 0.8811, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "9d3293586af3", "t_ms": 5.3, "event": "provider_start", "attempt": 0}
+{"request_id": "9d3293586af3", "t_ms": 12.1, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 3.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "9d3293586af3", "t_ms": 12.7, "event": "retry_wait_start", "wait_s": 3.0}
+{"request_id": "9d3293586af3", "t_ms": 3015.1, "event": "retry_wait_end"}
+{"request_id": "9d3293586af3", "t_ms": 3015.5, "event": "queue_enter", "est_tokens": 3402, "queue_len": 0}
+{"request_id": "9d3293586af3", "t_ms": 3015.9, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "9d3293586af3", "t_ms": 3016.0, "event": "provider_start", "attempt": 1}
+{"request_id": "9d3293586af3", "t_ms": 3477.8, "event": "first_token"}
+{"request_id": "9d3293586af3", "t_ms": 3569.2, "event": "provider_end", "attempt": 1, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 3003, "tokens_out": 207}
+{"request_id": "9d3293586af3", "t_ms": 3569.8, "event": "verify_start"}
+{"request_id": "9d3293586af3", "t_ms": 3570.8, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The English\u2011to\u2011French big Transformer used a residual dropout rate of **Pdrop\u202f=\u202f0.1** [attention p.8].  \nIn contrast, the English\u2011to\u2011German big Transformer used a higher residual dropout rate of **Pdrop\u202f=\u202f0.3** [attention p.8]."}
+{"request_id": "9d3293586af3", "t_ms": 3571.2, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 3571.3}
+{"request_id": "500f259c4aaa", "t_ms": 0.0, "event": "arrive", "question_id": "q05", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "500f259c4aaa", "t_ms": 0.3, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "500f259c4aaa", "t_ms": 0.8, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "500f259c4aaa", "t_ms": 1.0, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "500f259c4aaa", "t_ms": 1.9, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "500f259c4aaa", "t_ms": 2.1, "event": "gate", "best_score": 0.7687, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "500f259c4aaa", "t_ms": 2.2, "event": "provider_start", "attempt": 0}
+{"request_id": "500f259c4aaa", "t_ms": 5.7, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 18.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "500f259c4aaa", "t_ms": 6.0, "event": "retry_wait_start", "wait_s": 18.0}
+{"request_id": "e4029611d57c", "t_ms": 0.0, "event": "arrive", "question_id": "q06", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "e4029611d57c", "t_ms": 0.9, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "e4029611d57c", "t_ms": 7272.7, "event": "queue_exit", "admitted": true, "queued_ms": 7271.3}
+{"request_id": "e4029611d57c", "t_ms": 7275.1, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "e4029611d57c", "t_ms": 7278.1, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "e4029611d57c", "t_ms": 7279.4, "event": "gate", "best_score": 0.7083, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "e4029611d57c", "t_ms": 7280.2, "event": "provider_start", "attempt": 0}
+{"request_id": "500f259c4aaa", "t_ms": 18016.7, "event": "retry_wait_end"}
+{"request_id": "500f259c4aaa", "t_ms": 18017.3, "event": "queue_enter", "est_tokens": 3576, "queue_len": 0}
+{"request_id": "500f259c4aaa", "t_ms": 18017.9, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "500f259c4aaa", "t_ms": 18018.1, "event": "provider_start", "attempt": 1}
+{"request_id": "e4029611d57c", "t_ms": 7293.3, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 13.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "e4029611d57c", "t_ms": 7293.6, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 7293.7}
+{"request_id": "500f259c4aaa", "t_ms": 18562.7, "event": "first_token"}
+{"request_id": "500f259c4aaa", "t_ms": 18637.3, "event": "provider_end", "attempt": 1, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 3176, "tokens_out": 108}
+{"request_id": "500f259c4aaa", "t_ms": 18637.8, "event": "verify_start"}
+{"request_id": "500f259c4aaa", "t_ms": 18638.5, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The papers do not provide a concrete figure for Moshi\u2019s practical end\u2011to\u2011end latency. They do, however, state that the model\u2019s theoretical latency is 160\u202fms [moshi p.2] [moshi p.41]."}
+{"request_id": "500f259c4aaa", "t_ms": 18638.9, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 18638.9}
+{"request_id": "daa9b55b493b", "t_ms": 0.0, "event": "arrive", "question_id": "q07", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "daa9b55b493b", "t_ms": 0.2, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "daa9b55b493b", "t_ms": 9562.4, "event": "queue_exit", "admitted": true, "queued_ms": 9561.9}
+{"request_id": "daa9b55b493b", "t_ms": 9563.8, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "daa9b55b493b", "t_ms": 9566.8, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "daa9b55b493b", "t_ms": 9567.2, "event": "gate", "best_score": 1.0, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "daa9b55b493b", "t_ms": 9567.7, "event": "provider_start", "attempt": 0}
+{"request_id": "daa9b55b493b", "t_ms": 10285.7, "event": "first_token"}
+{"request_id": "daa9b55b493b", "t_ms": 10309.1, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1281, "tokens_out": 71}
+{"request_id": "daa9b55b493b", "t_ms": 10309.5, "event": "verify_start"}
+{"request_id": "daa9b55b493b", "t_ms": 10309.9, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The Depth Transformer in Moshi has **6 layers** and a **model dimension of 1024** [moshi p.14]."}
+{"request_id": "daa9b55b493b", "t_ms": 10310.1, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 10310.1}
+{"request_id": "adb4a61e68cd", "t_ms": 0.0, "event": "arrive", "question_id": "q08", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "adb4a61e68cd", "t_ms": 0.7, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "adb4a61e68cd", "t_ms": 1.0, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "adb4a61e68cd", "t_ms": 1.6, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "adb4a61e68cd", "t_ms": 2.9, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "adb4a61e68cd", "t_ms": 3.2, "event": "gate", "best_score": 0.6496, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "adb4a61e68cd", "t_ms": 3.4, "event": "provider_start", "attempt": 0}
+{"request_id": "adb4a61e68cd", "t_ms": 6.9, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 21.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "adb4a61e68cd", "t_ms": 7.1, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 7.2}
+{"request_id": "747c610c1aed", "t_ms": 0.0, "event": "arrive", "question_id": "q09", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "747c610c1aed", "t_ms": 1.7, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "747c610c1aed", "t_ms": 10274.9, "event": "queue_exit", "admitted": true, "queued_ms": 10272.7}
+{"request_id": "747c610c1aed", "t_ms": 10277.1, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "747c610c1aed", "t_ms": 10279.9, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "747c610c1aed", "t_ms": 10280.4, "event": "gate", "best_score": 0.3308, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "747c610c1aed", "t_ms": 10280.8, "event": "provider_start", "attempt": 0}
+{"request_id": "747c610c1aed", "t_ms": 10630.6, "event": "first_token"}
+{"request_id": "747c610c1aed", "t_ms": 10665.3, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1453, "tokens_out": 72}
+{"request_id": "747c610c1aed", "t_ms": 10666.0, "event": "verify_start"}
+{"request_id": "747c610c1aed", "t_ms": 10666.6, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "H\u2011Net fixes the ratio\u2011loss weight at **\u03b1\u202f=\u202f0.03** in all of its experiments. [hnet p.8]"}
+{"request_id": "747c610c1aed", "t_ms": 10667.0, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 10667.1}
+{"request_id": "3118dba9dfd1", "t_ms": 0.0, "event": "arrive", "question_id": "q10", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "3118dba9dfd1", "t_ms": 0.7, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "3118dba9dfd1", "t_ms": 1.2, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "3118dba9dfd1", "t_ms": 2.3, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "3118dba9dfd1", "t_ms": 4.9, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "3118dba9dfd1", "t_ms": 5.3, "event": "gate", "best_score": 0.6417, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "3118dba9dfd1", "t_ms": 5.8, "event": "provider_start", "attempt": 0}
+{"request_id": "3118dba9dfd1", "t_ms": 10.8, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 11.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "3118dba9dfd1", "t_ms": 11.2, "event": "retry_wait_start", "wait_s": 11.0}
+{"request_id": "575eaba235c4", "t_ms": 0.0, "event": "arrive", "question_id": "q11", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "575eaba235c4", "t_ms": 0.7, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "575eaba235c4", "t_ms": 278.7, "event": "queue_exit", "admitted": true, "queued_ms": 277.6}
+{"request_id": "575eaba235c4", "t_ms": 279.8, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "3118dba9dfd1", "t_ms": 11014.0, "event": "retry_wait_end"}
+{"request_id": "3118dba9dfd1", "t_ms": 11016.8, "event": "queue_enter", "est_tokens": 3663, "queue_len": 0}
+{"request_id": "3118dba9dfd1", "t_ms": 11017.1, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "3118dba9dfd1", "t_ms": 11017.4, "event": "provider_start", "attempt": 1}
+{"request_id": "575eaba235c4", "t_ms": 285.7, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "575eaba235c4", "t_ms": 285.9, "event": "gate", "best_score": 0.6142, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "575eaba235c4", "t_ms": 286.1, "event": "provider_start", "attempt": 0}
+{"request_id": "575eaba235c4", "t_ms": 292.5, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 14.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "575eaba235c4", "t_ms": 292.7, "event": "retry_wait_start", "wait_s": 14.0}
+{"request_id": "3118dba9dfd1", "t_ms": 11830.7, "event": "first_token"}
+{"request_id": "3118dba9dfd1", "t_ms": 11873.9, "event": "provider_end", "attempt": 1, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 3263, "tokens_out": 64}
+{"request_id": "3118dba9dfd1", "t_ms": 11874.4, "event": "verify_start"}
+{"request_id": "3118dba9dfd1", "t_ms": 11875.0, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The byte\u2011level 2\u2011stage H\u2011Net overtakes the BPE\u2011tokenized Transformer after about **30\u202fbillion training bytes**\u3010hnet p.12\u3011."}
+{"request_id": "3118dba9dfd1", "t_ms": 11875.4, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 11875.4}
+{"request_id": "7be4eae1a3a6", "t_ms": 0.0, "event": "arrive", "question_id": "q12", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "7be4eae1a3a6", "t_ms": 0.2, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "7be4eae1a3a6", "t_ms": 3560.6, "event": "queue_exit", "admitted": true, "queued_ms": 3560.2}
+{"request_id": "7be4eae1a3a6", "t_ms": 3561.2, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "575eaba235c4", "t_ms": 14294.5, "event": "retry_wait_end"}
+{"request_id": "575eaba235c4", "t_ms": 14296.0, "event": "queue_enter", "est_tokens": 1767, "queue_len": 0}
+{"request_id": "575eaba235c4", "t_ms": 14296.1, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "575eaba235c4", "t_ms": 14296.2, "event": "provider_start", "attempt": 1}
+{"request_id": "7be4eae1a3a6", "t_ms": 3564.5, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "7be4eae1a3a6", "t_ms": 3564.6, "event": "gate", "best_score": 0.6166, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "7be4eae1a3a6", "t_ms": 3564.7, "event": "provider_start", "attempt": 0}
+{"request_id": "575eaba235c4", "t_ms": 14302.6, "event": "provider_end", "attempt": 1, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 11.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "575eaba235c4", "t_ms": 14302.7, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 14302.7}
+{"request_id": "7be4eae1a3a6", "t_ms": 4592.1, "event": "first_token"}
+{"request_id": "7be4eae1a3a6", "t_ms": 4658.1, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1471, "tokens_out": 110}
+{"request_id": "7be4eae1a3a6", "t_ms": 4658.7, "event": "verify_start"}
+{"request_id": "7be4eae1a3a6", "t_ms": 4659.3, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "H\u2011Net\u2019s learned dynamic chunking compresses data to roughly **4.5\u20135\u202fbytes per chunk**. This resolution is comparable to that of standard BPE tokenizers, which also produce tokens of about the same byte\u2011length. [hnet p.3]"}
+{"request_id": "7be4eae1a3a6", "t_ms": 4659.9, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 4659.9}
+{"request_id": "fe4995c6391c", "t_ms": 0.0, "event": "arrive", "question_id": "q13", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "fe4995c6391c", "t_ms": 0.7, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "fe4995c6391c", "t_ms": 3838.8, "event": "queue_exit", "admitted": true, "queued_ms": 3837.6}
+{"request_id": "fe4995c6391c", "t_ms": 3840.4, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "fe4995c6391c", "t_ms": 3843.1, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "fe4995c6391c", "t_ms": 3843.6, "event": "gate", "best_score": 0.7193, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "fe4995c6391c", "t_ms": 3844.1, "event": "provider_start", "attempt": 0}
+{"request_id": "fe4995c6391c", "t_ms": 4539.0, "event": "first_token"}
+{"request_id": "fe4995c6391c", "t_ms": 4609.1, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1358, "tokens_out": 108}
+{"request_id": "fe4995c6391c", "t_ms": 4609.6, "event": "verify_start"}
+{"request_id": "fe4995c6391c", "t_ms": 4610.3, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "Moshi settled on a theoretical latency of **160\u202fms**, pretraining it with an **acoustic delay of 2** and finetuning it with an **acoustic delay of 1** [moshi p.26]."}
+{"request_id": "fe4995c6391c", "t_ms": 4610.7, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 4610.8}
+{"request_id": "51be19f55876", "t_ms": 0.0, "event": "arrive", "question_id": "q14", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "51be19f55876", "t_ms": 1.3, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "51be19f55876", "t_ms": 1.9, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "51be19f55876", "t_ms": 2.7, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "51be19f55876", "t_ms": 5.3, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "51be19f55876", "t_ms": 5.6, "event": "gate", "best_score": 0.6672, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "51be19f55876", "t_ms": 6.0, "event": "provider_start", "attempt": 0}
+{"request_id": "51be19f55876", "t_ms": 12.1, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 15.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "51be19f55876", "t_ms": 12.5, "event": "retry_wait_start", "wait_s": 15.0}
+{"request_id": "686b2b4b2c09", "t_ms": 0.0, "event": "arrive", "question_id": "q15", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "686b2b4b2c09", "t_ms": 0.8, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "686b2b4b2c09", "t_ms": 4279.1, "event": "queue_exit", "admitted": true, "queued_ms": 4277.8}
+{"request_id": "686b2b4b2c09", "t_ms": 4279.7, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "51be19f55876", "t_ms": 15014.7, "event": "retry_wait_end"}
+{"request_id": "51be19f55876", "t_ms": 15016.0, "event": "queue_enter", "est_tokens": 3476, "queue_len": 0}
+{"request_id": "51be19f55876", "t_ms": 15016.1, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "51be19f55876", "t_ms": 15016.2, "event": "provider_start", "attempt": 1}
+{"request_id": "686b2b4b2c09", "t_ms": 4282.6, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "686b2b4b2c09", "t_ms": 4282.6, "event": "gate", "best_score": 0.4334, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "686b2b4b2c09", "t_ms": 4282.7, "event": "provider_start", "attempt": 0}
+{"request_id": "686b2b4b2c09", "t_ms": 4287.2, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 14.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "686b2b4b2c09", "t_ms": 4287.3, "event": "retry_wait_start", "wait_s": 14.0}
+{"request_id": "51be19f55876", "t_ms": 16141.9, "event": "first_token"}
+{"request_id": "51be19f55876", "t_ms": 16182.8, "event": "provider_end", "attempt": 1, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 3076, "tokens_out": 19}
+{"request_id": "51be19f55876", "t_ms": 16183.4, "event": "verify_start"}
+{"request_id": "51be19f55876", "t_ms": 16184.2, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "According to the retrieved passage, the answer is supported [attention p.8]."}
+{"request_id": "51be19f55876", "t_ms": 16184.6, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 16184.7}
+{"request_id": "da7f4e369d5f", "t_ms": 0.0, "event": "arrive", "question_id": "q01", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "da7f4e369d5f", "t_ms": 0.8, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "da7f4e369d5f", "t_ms": 7556.2, "event": "queue_exit", "admitted": true, "queued_ms": 7554.8}
+{"request_id": "da7f4e369d5f", "t_ms": 7557.8, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "686b2b4b2c09", "t_ms": 18291.8, "event": "retry_wait_end"}
+{"request_id": "686b2b4b2c09", "t_ms": 18294.6, "event": "queue_enter", "est_tokens": 1861, "queue_len": 0}
+{"request_id": "686b2b4b2c09", "t_ms": 18295.0, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "686b2b4b2c09", "t_ms": 18295.4, "event": "provider_start", "attempt": 1}
+{"request_id": "da7f4e369d5f", "t_ms": 7564.7, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "da7f4e369d5f", "t_ms": 7565.3, "event": "gate", "best_score": 0.3741, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "da7f4e369d5f", "t_ms": 7565.8, "event": "provider_start", "attempt": 0}
+{"request_id": "686b2b4b2c09", "t_ms": 18308.0, "event": "provider_end", "attempt": 1, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 10.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "686b2b4b2c09", "t_ms": 18308.3, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 18308.4}
+{"request_id": "da7f4e369d5f", "t_ms": 10707.3, "event": "first_token"}
+{"request_id": "c38f9490b2da", "t_ms": 0.0, "event": "arrive", "question_id": "q02", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "c38f9490b2da", "t_ms": 0.6, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "da7f4e369d5f", "t_ms": 10791.7, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1376, "tokens_out": 64}
+{"request_id": "da7f4e369d5f", "t_ms": 10792.3, "event": "verify_start"}
+{"request_id": "da7f4e369d5f", "t_ms": 10792.7, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The paper used Adam with \u03b2\u2081\u202f=\u202f0.9, \u03b2\u2082\u202f=\u202f0.98 and \u03f5\u202f=\u202f10\u207b\u2079 [attention p.7]."}
+{"request_id": "da7f4e369d5f", "t_ms": 10793.1, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 10793.2}
+{"request_id": "c38f9490b2da", "t_ms": 6842.6, "event": "queue_exit", "admitted": true, "queued_ms": 6841.6}
+{"request_id": "c38f9490b2da", "t_ms": 6844.6, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "c38f9490b2da", "t_ms": 6847.8, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "c38f9490b2da", "t_ms": 6848.2, "event": "gate", "best_score": 0.6856, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "c38f9490b2da", "t_ms": 6848.9, "event": "provider_start", "attempt": 0}
+{"request_id": "c38f9490b2da", "t_ms": 7297.3, "event": "first_token"}
+{"request_id": "c38f9490b2da", "t_ms": 7347.5, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1431, "tokens_out": 86}
+{"request_id": "c38f9490b2da", "t_ms": 7348.3, "event": "verify_start"}
+{"request_id": "c38f9490b2da", "t_ms": 7348.9, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The Transformer (big) reports a single\u2011model BLEU score of **41.8** on the WMT\u202f2014 English\u2011to\u2011French task\u3010attention p.1\u3011."}
+{"request_id": "c38f9490b2da", "t_ms": 7349.7, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 7349.9}
+{"request_id": "674d36f4ac23", "t_ms": 0.0, "event": "arrive", "question_id": "q03", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "674d36f4ac23", "t_ms": 0.9, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "674d36f4ac23", "t_ms": 1.5, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "674d36f4ac23", "t_ms": 2.3, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "674d36f4ac23", "t_ms": 4.7, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "674d36f4ac23", "t_ms": 5.1, "event": "gate", "best_score": 0.8014, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "674d36f4ac23", "t_ms": 5.5, "event": "provider_start", "attempt": 0}
+{"request_id": "674d36f4ac23", "t_ms": 10.5, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 18.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "674d36f4ac23", "t_ms": 10.9, "event": "retry_wait_start", "wait_s": 18.0}
+{"request_id": "6fa073134b66", "t_ms": 0.0, "event": "arrive", "question_id": "q04", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "6fa073134b66", "t_ms": 0.9, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "6fa073134b66", "t_ms": 7276.9, "event": "queue_exit", "admitted": true, "queued_ms": 7275.4}
+{"request_id": "6fa073134b66", "t_ms": 7278.9, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "6fa073134b66", "t_ms": 7281.8, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "6fa073134b66", "t_ms": 7282.1, "event": "gate", "best_score": 0.7446, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "6fa073134b66", "t_ms": 7282.4, "event": "provider_start", "attempt": 0}
+{"request_id": "674d36f4ac23", "t_ms": 18018.5, "event": "retry_wait_end"}
+{"request_id": "674d36f4ac23", "t_ms": 18018.8, "event": "queue_enter", "est_tokens": 3546, "queue_len": 0}
+{"request_id": "674d36f4ac23", "t_ms": 18019.1, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "674d36f4ac23", "t_ms": 18019.4, "event": "provider_start", "attempt": 1}
+{"request_id": "6fa073134b66", "t_ms": 7293.6, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 13.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "6fa073134b66", "t_ms": 7293.9, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 7294.0}
+{"request_id": "674d36f4ac23", "t_ms": 18985.5, "event": "first_token"}
+{"request_id": "674d36f4ac23", "t_ms": 19035.2, "event": "provider_end", "attempt": 1, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 3147, "tokens_out": 96}
+{"request_id": "674d36f4ac23", "t_ms": 19035.9, "event": "verify_start"}
+{"request_id": "674d36f4ac23", "t_ms": 19036.7, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "Single\u2011head attention is 0.9\u202fBLEU points worse than the best multi\u2011head setting on the English\u2011to\u2011German dev set (newstest2013) [attention p.8]"}
+{"request_id": "674d36f4ac23", "t_ms": 19037.3, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 19037.5}
+{"request_id": "c7e82c34ec2d", "t_ms": 0.0, "event": "arrive", "question_id": "q05", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "c7e82c34ec2d", "t_ms": 0.8, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "c7e82c34ec2d", "t_ms": 9564.1, "event": "queue_exit", "admitted": true, "queued_ms": 9562.8}
+{"request_id": "c7e82c34ec2d", "t_ms": 9565.5, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "c7e82c34ec2d", "t_ms": 9569.3, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "c7e82c34ec2d", "t_ms": 9569.8, "event": "gate", "best_score": 0.7593, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "c7e82c34ec2d", "t_ms": 9570.2, "event": "provider_start", "attempt": 0}
+{"request_id": "c7e82c34ec2d", "t_ms": 9972.3, "event": "first_token"}
+{"request_id": "c7e82c34ec2d", "t_ms": 10074.4, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1383, "tokens_out": 117}
+{"request_id": "c7e82c34ec2d", "t_ms": 10074.9, "event": "verify_start"}
+{"request_id": "c7e82c34ec2d", "t_ms": 10075.4, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The papers do not report a practical end\u2011to\u2011end latency for Moshi. They do, however, state that the model is trained to achieve a theoretical latency of 160\u202fms (by pre\u2011training with an acoustic delay of 2 and fine\u2011tuning with an acoustic delay of 2)\u3010moshi p.26\u3011."}
+{"request_id": "c7e82c34ec2d", "t_ms": 10075.8, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 10075.9}
+{"request_id": "a63997649d05", "t_ms": 0.0, "event": "arrive", "question_id": "q06", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "a63997649d05", "t_ms": 0.8, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "a63997649d05", "t_ms": 1.3, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "a63997649d05", "t_ms": 2.1, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "a63997649d05", "t_ms": 4.2, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "a63997649d05", "t_ms": 4.7, "event": "gate", "best_score": 0.7112, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "a63997649d05", "t_ms": 5.1, "event": "provider_start", "attempt": 0}
+{"request_id": "a63997649d05", "t_ms": 10.1, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 21.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "a63997649d05", "t_ms": 10.5, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 10.6}
+{"request_id": "d4a9ed359c28", "t_ms": 0.0, "event": "arrive", "question_id": "q07", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "d4a9ed359c28", "t_ms": 0.8, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "d4a9ed359c28", "t_ms": 10277.6, "event": "queue_exit", "admitted": true, "queued_ms": 10276.3}
+{"request_id": "d4a9ed359c28", "t_ms": 10279.1, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "d4a9ed359c28", "t_ms": 10281.5, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "d4a9ed359c28", "t_ms": 10282.0, "event": "gate", "best_score": 1.0, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "d4a9ed359c28", "t_ms": 10282.3, "event": "provider_start", "attempt": 0}
+{"request_id": "1766c4389727", "t_ms": 0.0, "event": "arrive", "question_id": "q08", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "1766c4389727", "t_ms": 1.1, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "1766c4389727", "t_ms": 1.6, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "1766c4389727", "t_ms": 2.5, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "1766c4389727", "t_ms": 4.4, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "1766c4389727", "t_ms": 4.9, "event": "gate", "best_score": 0.6496, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "1766c4389727", "t_ms": 5.2, "event": "provider_start", "attempt": 0}
+{"request_id": "1766c4389727", "t_ms": 11.4, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 13.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "1766c4389727", "t_ms": 11.8, "event": "retry_wait_start", "wait_s": 13.0}
+{"request_id": "d4a9ed359c28", "t_ms": 12628.5, "event": "first_token"}
+{"request_id": "d4a9ed359c28", "t_ms": 12783.3, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1281, "tokens_out": 71}
+{"request_id": "d4a9ed359c28", "t_ms": 12783.9, "event": "verify_start"}
+{"request_id": "d4a9ed359c28", "t_ms": 12784.6, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The Depth Transformer in Moshi has **6 layers** and a **model dimension of 1024** [moshi p.14]."}
+{"request_id": "d4a9ed359c28", "t_ms": 12785.0, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 12785.1}
+{"request_id": "3880f3a1d763", "t_ms": 0.0, "event": "arrive", "question_id": "q09", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "3880f3a1d763", "t_ms": 1.7, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "3880f3a1d763", "t_ms": 2280.5, "event": "queue_exit", "admitted": true, "queued_ms": 2278.3}
+{"request_id": "3880f3a1d763", "t_ms": 2282.0, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "1766c4389727", "t_ms": 13015.8, "event": "retry_wait_end"}
+{"request_id": "1766c4389727", "t_ms": 13018.5, "event": "queue_enter", "est_tokens": 3595, "queue_len": 0}
+{"request_id": "1766c4389727", "t_ms": 13018.8, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "1766c4389727", "t_ms": 13019.2, "event": "provider_start", "attempt": 1}
+{"request_id": "3880f3a1d763", "t_ms": 2288.4, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "3880f3a1d763", "t_ms": 2288.8, "event": "gate", "best_score": 0.3308, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "3880f3a1d763", "t_ms": 2289.1, "event": "provider_start", "attempt": 0}
+{"request_id": "1766c4389727", "t_ms": 13031.1, "event": "provider_end", "attempt": 1, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 11.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "1766c4389727", "t_ms": 13031.6, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 13031.7}
+{"request_id": "3880f3a1d763", "t_ms": 2647.8, "event": "first_token"}
+{"request_id": "3880f3a1d763", "t_ms": 2692.8, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1453, "tokens_out": 72}
+{"request_id": "3880f3a1d763", "t_ms": 2692.9, "event": "verify_start"}
+{"request_id": "3880f3a1d763", "t_ms": 2693.1, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "H\u2011Net fixes the ratio\u2011loss weight at **\u03b1\u202f=\u202f0.03** in all of its experiments. [hnet p.8]"}
+{"request_id": "3880f3a1d763", "t_ms": 2693.1, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 2693.3}
+{"request_id": "c422fd6d59de", "t_ms": 0.0, "event": "arrive", "question_id": "q10", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "c422fd6d59de", "t_ms": 0.3, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "c422fd6d59de", "t_ms": 2566.9, "event": "queue_exit", "admitted": true, "queued_ms": 2566.5}
+{"request_id": "c422fd6d59de", "t_ms": 2568.3, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "c422fd6d59de", "t_ms": 2571.4, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "c422fd6d59de", "t_ms": 2571.8, "event": "gate", "best_score": 0.6682, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "c422fd6d59de", "t_ms": 2572.1, "event": "provider_start", "attempt": 0}
+{"request_id": "c422fd6d59de", "t_ms": 2912.6, "event": "first_token"}
+{"request_id": "c422fd6d59de", "t_ms": 2958.7, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1472, "tokens_out": 89}
+{"request_id": "c422fd6d59de", "t_ms": 2959.4, "event": "verify_start"}
+{"request_id": "c422fd6d59de", "t_ms": 2960.1, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The byte\u2011level 2\u2011stage H\u2011Net overtakes the perplexity of the BPE\u2011tokenized Transformer after about **30\u202fbillion training bytes** [hnet p.12]"}
+{"request_id": "c422fd6d59de", "t_ms": 2960.6, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 2960.6}
+{"request_id": "cb3260eca514", "t_ms": 0.0, "event": "arrive", "question_id": "q11", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "cb3260eca514", "t_ms": 1.7, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "cb3260eca514", "t_ms": 2.1, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "cb3260eca514", "t_ms": 3.0, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "cb3260eca514", "t_ms": 5.3, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "cb3260eca514", "t_ms": 5.7, "event": "gate", "best_score": 0.7571, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "cb3260eca514", "t_ms": 6.2, "event": "provider_start", "attempt": 0}
+{"request_id": "cb3260eca514", "t_ms": 395.6, "event": "first_token"}
+{"request_id": "cb3260eca514", "t_ms": 453.8, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 2997, "tokens_out": 121}
+{"request_id": "cb3260eca514", "t_ms": 454.4, "event": "verify_start"}
+{"request_id": "cb3260eca514", "t_ms": 455.1, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The 1\u2011stage H\u2011Net is trained toward a compression target of \\(N_{0}=6\\) [hnet p.10]. At the Large scale it reports a bytes\u2011per\u2011innermost\u2011chunk (BPIC) of 4.8\u202fbytes [hnet p.10]."}
+{"request_id": "cb3260eca514", "t_ms": 455.5, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 455.6}
+{"request_id": "4fea0ee57adb", "t_ms": 0.0, "event": "arrive", "question_id": "q12", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "4fea0ee57adb", "t_ms": 0.9, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "4fea0ee57adb", "t_ms": 1.4, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "4fea0ee57adb", "t_ms": 2.2, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "4fea0ee57adb", "t_ms": 4.4, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "4fea0ee57adb", "t_ms": 4.8, "event": "gate", "best_score": 0.7223, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "4fea0ee57adb", "t_ms": 5.2, "event": "provider_start", "attempt": 0}
+{"request_id": "4fea0ee57adb", "t_ms": 12.0, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 14.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "4fea0ee57adb", "t_ms": 12.6, "event": "retry_wait_start", "wait_s": 14.0}
+{"request_id": "fea200ee2754", "t_ms": 0.0, "event": "arrive", "question_id": "q13", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "fea200ee2754", "t_ms": 0.2, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "fea200ee2754", "t_ms": 3282.1, "event": "queue_exit", "admitted": true, "queued_ms": 3281.6}
+{"request_id": "fea200ee2754", "t_ms": 3283.5, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "4fea0ee57adb", "t_ms": 14016.2, "event": "retry_wait_end"}
+{"request_id": "4fea0ee57adb", "t_ms": 14018.8, "event": "queue_enter", "est_tokens": 3623, "queue_len": 0}
+{"request_id": "4fea0ee57adb", "t_ms": 14019.2, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "4fea0ee57adb", "t_ms": 14019.5, "event": "provider_start", "attempt": 1}
+{"request_id": "fea200ee2754", "t_ms": 3289.9, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "fea200ee2754", "t_ms": 3290.4, "event": "gate", "best_score": 0.7193, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "fea200ee2754", "t_ms": 3290.8, "event": "provider_start", "attempt": 0}
+{"request_id": "fea200ee2754", "t_ms": 3299.2, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 13.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "fea200ee2754", "t_ms": 3299.7, "event": "retry_wait_start", "wait_s": 13.0}
+{"request_id": "4fea0ee57adb", "t_ms": 14686.1, "event": "first_token"}
+{"request_id": "4fea0ee57adb", "t_ms": 14794.6, "event": "provider_end", "attempt": 1, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 3223, "tokens_out": 119}
+{"request_id": "4fea0ee57adb", "t_ms": 14795.2, "event": "verify_start"}
+{"request_id": "4fea0ee57adb", "t_ms": 14795.9, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "H\u2011Net\u2019s dynamic chunking compresses raw byte sequences to a resolution comparable to that of BPE tokenizers, yielding roughly **4.5\u20135 bytes per chunk** [hnet p.2]. This matches the average token length produced by standard BPE tokenizers, indicating that H\u2011Net learns a similar level of compression without explicit tokenization."}
+{"request_id": "4fea0ee57adb", "t_ms": 14796.4, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 14796.5}
+{"request_id": "7aaad5ca6b8c", "t_ms": 0.0, "event": "arrive", "question_id": "q14", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "7aaad5ca6b8c", "t_ms": 0.3, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "7aaad5ca6b8c", "t_ms": 5567.3, "event": "queue_exit", "admitted": true, "queued_ms": 5566.7}
+{"request_id": "7aaad5ca6b8c", "t_ms": 5568.5, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "fea200ee2754", "t_ms": 16303.2, "event": "retry_wait_end"}
+{"request_id": "fea200ee2754", "t_ms": 16306.5, "event": "queue_enter", "est_tokens": 1758, "queue_len": 0}
+{"request_id": "fea200ee2754", "t_ms": 16306.8, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "fea200ee2754", "t_ms": 16307.1, "event": "provider_start", "attempt": 1}
+{"request_id": "7aaad5ca6b8c", "t_ms": 5575.3, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "7aaad5ca6b8c", "t_ms": 5575.7, "event": "gate", "best_score": 0.6472, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "7aaad5ca6b8c", "t_ms": 5576.1, "event": "provider_start", "attempt": 0}
+{"request_id": "fea200ee2754", "t_ms": 16319.1, "event": "provider_end", "attempt": 1, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 11.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "fea200ee2754", "t_ms": 16319.3, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 16319.3}
+{"request_id": "7aaad5ca6b8c", "t_ms": 6464.3, "event": "first_token"}
+{"request_id": "7aaad5ca6b8c", "t_ms": 6521.6, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1286, "tokens_out": 87}
+{"request_id": "7aaad5ca6b8c", "t_ms": 6521.8, "event": "verify_start"}
+{"request_id": "7aaad5ca6b8c", "t_ms": 6522.0, "event": "verify_end", "ok": true, "is_refusal": true, "problems": [], "raw": "NOT_IN_PAPERS: The provided passages do not state the number of training steps taken by the big Transformer relative to the base model, nor do they report an EN\u2011DE BLEU gap between the two models in Table\u202f2."}
+{"request_id": "7aaad5ca6b8c", "t_ms": 6522.1, "event": "done", "status": "ok", "outcome": "refused_model", "total_ms": 6522.1}
+{"request_id": "f412e0ff5269", "t_ms": 0.0, "event": "arrive", "question_id": "q15", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "f412e0ff5269", "t_ms": 0.4, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "f412e0ff5269", "t_ms": 5853.8, "event": "queue_exit", "admitted": true, "queued_ms": 5853.0}
+{"request_id": "f412e0ff5269", "t_ms": 5854.7, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "f412e0ff5269", "t_ms": 5857.1, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "f412e0ff5269", "t_ms": 5857.3, "event": "gate", "best_score": 0.4334, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "f412e0ff5269", "t_ms": 5857.5, "event": "provider_start", "attempt": 0}
+{"request_id": "f412e0ff5269", "t_ms": 7469.2, "event": "first_token"}
+{"request_id": "f412e0ff5269", "t_ms": 8159.0, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1461, "tokens_out": 154}
+{"request_id": "f412e0ff5269", "t_ms": 8159.6, "event": "verify_start"}
+{"request_id": "f412e0ff5269", "t_ms": 8160.2, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The original Transformer applies **post\u2011normalization** after each sub\u2011layer (i.e., a normalization layer is placed after the residual addition in every Transformer block) [hnet p.8]. H\u2011Net notes that modern large language models use **pre\u2011normalization**: they place a normalization layer (e.g., RMSNorm) before the residual addition and typically add a final normalization layer after all residual blocks, rather than the post\u2011normalization design of the original Transformer [hnet p.8]."}
+{"request_id": "f412e0ff5269", "t_ms": 8160.6, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 8160.7}
+{"request_id": "0bc2db21e46a", "t_ms": 0.0, "event": "arrive", "question_id": "q01", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "0bc2db21e46a", "t_ms": 0.6, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "0bc2db21e46a", "t_ms": 1.0, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "0bc2db21e46a", "t_ms": 1.7, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "0bc2db21e46a", "t_ms": 3.1, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "0bc2db21e46a", "t_ms": 3.3, "event": "gate", "best_score": 0.3611, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "0bc2db21e46a", "t_ms": 3.4, "event": "provider_start", "attempt": 0}
+{"request_id": "0bc2db21e46a", "t_ms": 7.0, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 18.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "0bc2db21e46a", "t_ms": 7.1, "event": "retry_wait_start", "wait_s": 18.0}
+{"request_id": "eaece6ec7270", "t_ms": 0.0, "event": "arrive", "question_id": "q02", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "eaece6ec7270", "t_ms": 0.8, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "eaece6ec7270", "t_ms": 7275.9, "event": "queue_exit", "admitted": true, "queued_ms": 7274.7}
+{"request_id": "eaece6ec7270", "t_ms": 7277.5, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "0bc2db21e46a", "t_ms": 18011.4, "event": "retry_wait_end"}
+{"request_id": "0bc2db21e46a", "t_ms": 18014.4, "event": "queue_enter", "est_tokens": 3532, "queue_len": 0}
+{"request_id": "0bc2db21e46a", "t_ms": 18014.7, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "0bc2db21e46a", "t_ms": 18014.9, "event": "provider_start", "attempt": 1}
+{"request_id": "eaece6ec7270", "t_ms": 7283.9, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "eaece6ec7270", "t_ms": 7284.3, "event": "gate", "best_score": 0.6856, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "eaece6ec7270", "t_ms": 7284.5, "event": "provider_start", "attempt": 0}
+{"request_id": "eaece6ec7270", "t_ms": 7292.6, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 14.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "eaece6ec7270", "t_ms": 7293.0, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 7293.0}
+{"request_id": "0bc2db21e46a", "t_ms": 18666.4, "event": "first_token"}
+{"request_id": "0bc2db21e46a", "t_ms": 18712.0, "event": "provider_end", "attempt": 1, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 3132, "tokens_out": 98}
+{"request_id": "0bc2db21e46a", "t_ms": 18712.6, "event": "verify_start"}
+{"request_id": "0bc2db21e46a", "t_ms": 18713.2, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The paper used the Adam optimizer with the following hyperparameters: \u03b2\u2081\u202f=\u202f0.9, \u03b2\u2082\u202f=\u202f0.98, and \u03b5\u202f=\u202f10\u207b\u2079 [attention p.7]."}
+{"request_id": "0bc2db21e46a", "t_ms": 18713.6, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 18713.7}
+{"request_id": "b31f65531daf", "t_ms": 0.0, "event": "arrive", "question_id": "q03", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "b31f65531daf", "t_ms": 0.3, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "b31f65531daf", "t_ms": 10560.4, "event": "queue_exit", "admitted": true, "queued_ms": 10559.7}
+{"request_id": "b31f65531daf", "t_ms": 10560.8, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "b31f65531daf", "t_ms": 10561.9, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "b31f65531daf", "t_ms": 10562.0, "event": "gate", "best_score": 0.8, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "b31f65531daf", "t_ms": 10562.1, "event": "provider_start", "attempt": 0}
+{"request_id": "e151e0b24db5", "t_ms": 0.0, "event": "arrive", "question_id": "q04", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "e151e0b24db5", "t_ms": 0.3, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "e151e0b24db5", "t_ms": 0.4, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "e151e0b24db5", "t_ms": 0.8, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "e151e0b24db5", "t_ms": 2.1, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "e151e0b24db5", "t_ms": 2.2, "event": "gate", "best_score": 0.8811, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "e151e0b24db5", "t_ms": 2.4, "event": "provider_start", "attempt": 0}
+{"request_id": "e151e0b24db5", "t_ms": 6.7, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 22.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "e151e0b24db5", "t_ms": 6.8, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 6.9}
+{"request_id": "b31f65531daf", "t_ms": 12128.0, "event": "first_token"}
+{"request_id": "b31f65531daf", "t_ms": 12348.0, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1403, "tokens_out": 86}
+{"request_id": "b31f65531daf", "t_ms": 12348.3, "event": "verify_start"}
+{"request_id": "b31f65531daf", "t_ms": 12348.5, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "Single\u2011head attention is 0.9\u202fBLEU points worse than the best attention setting in the Table\u202f3 ablations on the English\u2011German dev set, newstest2013. [attention p.9]"}
+{"request_id": "b31f65531daf", "t_ms": 12348.6, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 12348.7}
+{"request_id": "d1b656e5db63", "t_ms": 0.0, "event": "arrive", "question_id": "q05", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "d1b656e5db63", "t_ms": 0.7, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "0c248ec8ab25", "t_ms": 0.0, "event": "arrive", "question_id": "q06", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 1}
+{"request_id": "0c248ec8ab25", "t_ms": 1.1, "event": "queue_enter", "est_tokens": 1750, "queue_len": 1}
+{"request_id": "d1b656e5db63", "t_ms": 11275.6, "event": "queue_exit", "admitted": true, "queued_ms": 11274.5}
+{"request_id": "d1b656e5db63", "t_ms": 11276.9, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "0c248ec8ab25", "t_ms": 547.6, "event": "queue_exit", "admitted": true, "queued_ms": 546.1}
+{"request_id": "0c248ec8ab25", "t_ms": 548.4, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "d1b656e5db63", "t_ms": 11280.5, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "d1b656e5db63", "t_ms": 11282.5, "event": "gate", "best_score": 0.7593, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "d1b656e5db63", "t_ms": 11282.9, "event": "provider_start", "attempt": 0}
+{"request_id": "0c248ec8ab25", "t_ms": 553.6, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "0c248ec8ab25", "t_ms": 554.0, "event": "gate", "best_score": 0.7083, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "0c248ec8ab25", "t_ms": 554.3, "event": "provider_start", "attempt": 0}
+{"request_id": "d1b656e5db63", "t_ms": 11637.6, "event": "first_token"}
+{"request_id": "d1b656e5db63", "t_ms": 11722.9, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1383, "tokens_out": 117}
+{"request_id": "d1b656e5db63", "t_ms": 11723.1, "event": "verify_start"}
+{"request_id": "d1b656e5db63", "t_ms": 11723.3, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The papers do not report a practical end\u2011to\u2011end latency for Moshi. They do, however, state that the model is trained to achieve a theoretical latency of 160\u202fms (by pre\u2011training with an acoustic delay of 2 and fine\u2011tuning with an acoustic delay of 2)\u3010moshi p.26\u3011."}
+{"request_id": "d1b656e5db63", "t_ms": 11723.3, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 11723.4}
+{"request_id": "0c248ec8ab25", "t_ms": 1136.8, "event": "first_token"}
+{"request_id": "0c248ec8ab25", "t_ms": 1203.9, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1351, "tokens_out": 138}
+{"request_id": "0c248ec8ab25", "t_ms": 1204.1, "event": "verify_start"}
+{"request_id": "0c248ec8ab25", "t_ms": 1204.5, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The Mimi codec uses a Residual Vector Quantizer (RVQ) with the following settings:  \n- Number of quantizers \\(Q = 8\\)  \n- Codebook size per quantizer \\(N_A = 2048\\)  \n- Latent frame rate \\(= 12.5\\)\u202fHz  \n- Bitrate \\(= 1.1\\)\u202fkbps  \n\n[moshi p.10]"}
+{"request_id": "0c248ec8ab25", "t_ms": 1204.6, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 1204.7}
+{"request_id": "f8aaadb695c0", "t_ms": 0.0, "event": "arrive", "question_id": "q07", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "f8aaadb695c0", "t_ms": 0.7, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "f8aaadb695c0", "t_ms": 1.2, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "f8aaadb695c0", "t_ms": 1.9, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "f8aaadb695c0", "t_ms": 3.5, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "f8aaadb695c0", "t_ms": 3.9, "event": "gate", "best_score": 1.0, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "f8aaadb695c0", "t_ms": 4.3, "event": "provider_start", "attempt": 0}
+{"request_id": "f8aaadb695c0", "t_ms": 10.5, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 9.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "f8aaadb695c0", "t_ms": 10.9, "event": "retry_wait_start", "wait_s": 9.0}
+{"request_id": "f8aaadb695c0", "t_ms": 9013.2, "event": "retry_wait_end"}
+{"request_id": "f8aaadb695c0", "t_ms": 9014.1, "event": "queue_enter", "est_tokens": 3290, "queue_len": 0}
+{"request_id": "f8aaadb695c0", "t_ms": 9014.6, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "f8aaadb695c0", "t_ms": 9015.1, "event": "provider_start", "attempt": 1}
+{"request_id": "f8aaadb695c0", "t_ms": 9708.2, "event": "first_token"}
+{"request_id": "f8aaadb695c0", "t_ms": 9738.0, "event": "provider_end", "attempt": 1, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 2890, "tokens_out": 72}
+{"request_id": "f8aaadb695c0", "t_ms": 9738.5, "event": "verify_start"}
+{"request_id": "f8aaadb695c0", "t_ms": 9740.4, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The Depth Transformer in Moshi has **6 layers** and a **model dimension of 1024** [moshi p.13]."}
+{"request_id": "f8aaadb695c0", "t_ms": 9741.7, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 9741.7}
+{"request_id": "aa7a64ed78b0", "t_ms": 0.0, "event": "arrive", "question_id": "q08", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "aa7a64ed78b0", "t_ms": 0.4, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "aa7a64ed78b0", "t_ms": 0.8, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "aa7a64ed78b0", "t_ms": 1.1, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "aa7a64ed78b0", "t_ms": 2.0, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "aa7a64ed78b0", "t_ms": 2.2, "event": "gate", "best_score": 0.6496, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "aa7a64ed78b0", "t_ms": 2.3, "event": "provider_start", "attempt": 0}
+{"request_id": "aa7a64ed78b0", "t_ms": 5.7, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 23.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "aa7a64ed78b0", "t_ms": 5.9, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 5.9}
+{"request_id": "3a319ff72848", "t_ms": 0.0, "event": "arrive", "question_id": "q09", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "3a319ff72848", "t_ms": 0.6, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "89e71c33aa52", "t_ms": 0.0, "event": "arrive", "question_id": "q10", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 1}
+{"request_id": "89e71c33aa52", "t_ms": 1.6, "event": "queue_enter", "est_tokens": 1750, "queue_len": 1}
+{"request_id": "3a319ff72848", "t_ms": 12274.7, "event": "queue_exit", "admitted": true, "queued_ms": 12273.6}
+{"request_id": "3a319ff72848", "t_ms": 12276.3, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "89e71c33aa52", "t_ms": 1543.7, "event": "queue_exit", "admitted": true, "queued_ms": 1541.6}
+{"request_id": "89e71c33aa52", "t_ms": 1554.9, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "3a319ff72848", "t_ms": 12292.2, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "3a319ff72848", "t_ms": 12292.5, "event": "gate", "best_score": 0.3308, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "3a319ff72848", "t_ms": 12292.7, "event": "provider_start", "attempt": 0}
+{"request_id": "89e71c33aa52", "t_ms": 1560.9, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "89e71c33aa52", "t_ms": 1561.1, "event": "gate", "best_score": 0.6682, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "89e71c33aa52", "t_ms": 1561.3, "event": "provider_start", "attempt": 0}
+{"request_id": "89e71c33aa52", "t_ms": 1567.3, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 1.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "89e71c33aa52", "t_ms": 1567.5, "event": "retry_wait_start", "wait_s": 1.0}
+{"request_id": "3a319ff72848", "t_ms": 12856.2, "event": "first_token"}
+{"request_id": "3a319ff72848", "t_ms": 12875.1, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1453, "tokens_out": 72}
+{"request_id": "3a319ff72848", "t_ms": 12875.6, "event": "verify_start"}
+{"request_id": "3a319ff72848", "t_ms": 12876.1, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "H\u2011Net fixes the ratio\u2011loss weight at **\u03b1\u202f=\u202f0.03** in all of its experiments. [hnet p.8]"}
+{"request_id": "3a319ff72848", "t_ms": 12876.4, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 12876.5}
+{"request_id": "89e71c33aa52", "t_ms": 2568.3, "event": "retry_wait_end"}
+{"request_id": "89e71c33aa52", "t_ms": 2569.1, "event": "queue_enter", "est_tokens": 1872, "queue_len": 0}
+{"request_id": "89e71c33aa52", "t_ms": 2569.5, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "89e71c33aa52", "t_ms": 2570.0, "event": "provider_start", "attempt": 1}
+{"request_id": "89e71c33aa52", "t_ms": 3174.1, "event": "first_token"}
+{"request_id": "89e71c33aa52", "t_ms": 3246.7, "event": "provider_end", "attempt": 1, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1472, "tokens_out": 89}
+{"request_id": "89e71c33aa52", "t_ms": 3246.9, "event": "verify_start"}
+{"request_id": "89e71c33aa52", "t_ms": 3246.9, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The byte\u2011level 2\u2011stage H\u2011Net overtakes the perplexity of the BPE\u2011tokenized Transformer after about **30\u202fbillion training bytes** [hnet p.12]"}
+{"request_id": "89e71c33aa52", "t_ms": 3247.0, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 3247.1}
+{"request_id": "acc50b1e0d72", "t_ms": 0.0, "event": "arrive", "question_id": "q11", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "acc50b1e0d72", "t_ms": 1.7, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "acc50b1e0d72", "t_ms": 2.1, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "acc50b1e0d72", "t_ms": 3.2, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "acc50b1e0d72", "t_ms": 5.6, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "acc50b1e0d72", "t_ms": 5.9, "event": "gate", "best_score": 0.7571, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "acc50b1e0d72", "t_ms": 6.2, "event": "provider_start", "attempt": 0}
+{"request_id": "acc50b1e0d72", "t_ms": 12.6, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 13.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "acc50b1e0d72", "t_ms": 13.1, "event": "retry_wait_start", "wait_s": 13.0}
+{"request_id": "fae1047444c0", "t_ms": 0.0, "event": "arrive", "question_id": "q12", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "fae1047444c0", "t_ms": 0.5, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "fae1047444c0", "t_ms": 2280.9, "event": "queue_exit", "admitted": true, "queued_ms": 2280.2}
+{"request_id": "fae1047444c0", "t_ms": 2321.0, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "acc50b1e0d72", "t_ms": 13054.9, "event": "retry_wait_end"}
+{"request_id": "acc50b1e0d72", "t_ms": 13055.0, "event": "queue_enter", "est_tokens": 3397, "queue_len": 0}
+{"request_id": "acc50b1e0d72", "t_ms": 13055.0, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "acc50b1e0d72", "t_ms": 13055.1, "event": "provider_start", "attempt": 1}
+{"request_id": "fae1047444c0", "t_ms": 2362.0, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "fae1047444c0", "t_ms": 2362.1, "event": "gate", "best_score": 0.6166, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "fae1047444c0", "t_ms": 2362.2, "event": "provider_start", "attempt": 0}
+{"request_id": "fae1047444c0", "t_ms": 2370.6, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 14.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "fae1047444c0", "t_ms": 2370.9, "event": "retry_wait_start", "wait_s": 14.0}
+{"request_id": "acc50b1e0d72", "t_ms": 13879.7, "event": "first_token"}
+{"request_id": "acc50b1e0d72", "t_ms": 13944.8, "event": "provider_end", "attempt": 1, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 2997, "tokens_out": 121}
+{"request_id": "acc50b1e0d72", "t_ms": 13945.1, "event": "verify_start"}
+{"request_id": "acc50b1e0d72", "t_ms": 13945.4, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The 1\u2011stage H\u2011Net is trained toward a compression target of \\(N_{0}=6\\) [hnet p.10]. At the Large scale it reports a bytes\u2011per\u2011innermost\u2011chunk (BPIC) of 4.8\u202fbytes [hnet p.10]."}
+{"request_id": "acc50b1e0d72", "t_ms": 13945.6, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 13945.6}
+{"request_id": "764ec482dda9", "t_ms": 0.0, "event": "arrive", "question_id": "q13", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "764ec482dda9", "t_ms": 1.5, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "764ec482dda9", "t_ms": 5640.6, "event": "queue_exit", "admitted": true, "queued_ms": 5639.0}
+{"request_id": "764ec482dda9", "t_ms": 5641.3, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "fae1047444c0", "t_ms": 16372.8, "event": "retry_wait_end"}
+{"request_id": "fae1047444c0", "t_ms": 16374.4, "event": "queue_enter", "est_tokens": 1870, "queue_len": 0}
+{"request_id": "fae1047444c0", "t_ms": 16374.6, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "fae1047444c0", "t_ms": 16374.7, "event": "provider_start", "attempt": 1}
+{"request_id": "764ec482dda9", "t_ms": 5645.1, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "764ec482dda9", "t_ms": 5645.2, "event": "gate", "best_score": 0.7193, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "764ec482dda9", "t_ms": 5645.4, "event": "provider_start", "attempt": 0}
+{"request_id": "fae1047444c0", "t_ms": 16382.2, "event": "provider_end", "attempt": 1, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 11.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "fae1047444c0", "t_ms": 16382.4, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 16382.5}
+{"request_id": "764ec482dda9", "t_ms": 6042.1, "event": "first_token"}
+{"request_id": "764ec482dda9", "t_ms": 6110.8, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1358, "tokens_out": 108}
+{"request_id": "764ec482dda9", "t_ms": 6111.5, "event": "verify_start"}
+{"request_id": "764ec482dda9", "t_ms": 6112.2, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "Moshi settled on a theoretical latency of **160\u202fms**, pretraining it with an **acoustic delay of 2** and finetuning it with an **acoustic delay of 1** [moshi p.26]."}
+{"request_id": "764ec482dda9", "t_ms": 6112.7, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 6112.7}
+{"request_id": "01c18810dc81", "t_ms": 0.0, "event": "arrive", "question_id": "q14", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "01c18810dc81", "t_ms": 1.2, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "01c18810dc81", "t_ms": 5918.2, "event": "queue_exit", "admitted": true, "queued_ms": 5916.8}
+{"request_id": "01c18810dc81", "t_ms": 5919.7, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "01c18810dc81", "t_ms": 5921.9, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "01c18810dc81", "t_ms": 5922.0, "event": "gate", "best_score": 0.6472, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "01c18810dc81", "t_ms": 5922.2, "event": "provider_start", "attempt": 0}
+{"request_id": "01c18810dc81", "t_ms": 6578.9, "event": "first_token"}
+{"request_id": "01c18810dc81", "t_ms": 6643.5, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1286, "tokens_out": 87}
+{"request_id": "01c18810dc81", "t_ms": 6644.2, "event": "verify_start"}
+{"request_id": "01c18810dc81", "t_ms": 6644.7, "event": "verify_end", "ok": true, "is_refusal": true, "problems": [], "raw": "NOT_IN_PAPERS: The provided passages do not state the number of training steps taken by the big Transformer relative to the base model, nor do they report an EN\u2011DE BLEU gap between the two models in Table\u202f2."}
+{"request_id": "01c18810dc81", "t_ms": 6645.1, "event": "done", "status": "ok", "outcome": "refused_model", "total_ms": 6645.1}
+{"request_id": "2b987eea8bfb", "t_ms": 0.0, "event": "arrive", "question_id": "q15", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "2b987eea8bfb", "t_ms": 0.9, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "2b987eea8bfb", "t_ms": 1.4, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "2b987eea8bfb", "t_ms": 2.2, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "2b987eea8bfb", "t_ms": 10.3, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "2b987eea8bfb", "t_ms": 11.0, "event": "gate", "best_score": 0.4396, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "2b987eea8bfb", "t_ms": 11.9, "event": "provider_start", "attempt": 0}
+{"request_id": "2b987eea8bfb", "t_ms": 17.1, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 16.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "2b987eea8bfb", "t_ms": 17.4, "event": "retry_wait_start", "wait_s": 16.0}
+{"request_id": "ebe383499afe", "t_ms": 0.0, "event": "arrive", "question_id": "q01", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "ebe383499afe", "t_ms": 1.8, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "ebe383499afe", "t_ms": 5285.3, "event": "queue_exit", "admitted": true, "queued_ms": 5282.9}
+{"request_id": "ebe383499afe", "t_ms": 5286.6, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "2b987eea8bfb", "t_ms": 16020.2, "event": "retry_wait_end"}
+{"request_id": "2b987eea8bfb", "t_ms": 16021.6, "event": "queue_enter", "est_tokens": 3675, "queue_len": 0}
+{"request_id": "2b987eea8bfb", "t_ms": 16021.8, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "2b987eea8bfb", "t_ms": 16022.0, "event": "provider_start", "attempt": 1}
+{"request_id": "ebe383499afe", "t_ms": 5290.8, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "ebe383499afe", "t_ms": 5291.0, "event": "gate", "best_score": 0.3741, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "ebe383499afe", "t_ms": 5291.2, "event": "provider_start", "attempt": 0}
+{"request_id": "ebe383499afe", "t_ms": 5297.7, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 14.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "ebe383499afe", "t_ms": 5298.0, "event": "retry_wait_start", "wait_s": 14.0}
+{"request_id": "2b987eea8bfb", "t_ms": 16563.8, "event": "first_token"}
+{"request_id": "2b987eea8bfb", "t_ms": 16709.8, "event": "provider_end", "attempt": 1, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 3276, "tokens_out": 143}
+{"request_id": "2b987eea8bfb", "t_ms": 16710.2, "event": "verify_start"}
+{"request_id": "2b987eea8bfb", "t_ms": 16710.7, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The original Transformer applies **post\u2011normalization** after each sub\u2011layer, i.e., a normalization layer is placed *after* the residual addition within each block. H\u2011Net notes that modern large language models use **pre\u2011normalization**: they place a final normalization layer (e.g., RMSNorm) *after* all residual blocks, before the next sub\u2011layer, to balance feature norms and signal propagation [hnet p.8]."}
+{"request_id": "2b987eea8bfb", "t_ms": 16710.8, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 16710.9}
+{"request_id": "f3df60c0fa96", "t_ms": 0.0, "event": "arrive", "question_id": "q02", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "f3df60c0fa96", "t_ms": 1.6, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "f3df60c0fa96", "t_ms": 8565.7, "event": "queue_exit", "admitted": true, "queued_ms": 8563.7}
+{"request_id": "f3df60c0fa96", "t_ms": 8566.7, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "ebe383499afe", "t_ms": 19300.5, "event": "retry_wait_end"}
+{"request_id": "ebe383499afe", "t_ms": 19302.4, "event": "queue_enter", "est_tokens": 1775, "queue_len": 0}
+{"request_id": "ebe383499afe", "t_ms": 19302.5, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "ebe383499afe", "t_ms": 19302.5, "event": "provider_start", "attempt": 1}
+{"request_id": "f3df60c0fa96", "t_ms": 8573.0, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "f3df60c0fa96", "t_ms": 8573.1, "event": "gate", "best_score": 0.6856, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "f3df60c0fa96", "t_ms": 8573.2, "event": "provider_start", "attempt": 0}
+{"request_id": "ebe383499afe", "t_ms": 19312.0, "event": "provider_end", "attempt": 1, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 12.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "ebe383499afe", "t_ms": 19312.1, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 19312.2}
+{"request_id": "f3df60c0fa96", "t_ms": 9038.6, "event": "first_token"}
+{"request_id": "f3df60c0fa96", "t_ms": 9076.9, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1431, "tokens_out": 86}
+{"request_id": "f3df60c0fa96", "t_ms": 9077.0, "event": "verify_start"}
+{"request_id": "f3df60c0fa96", "t_ms": 9077.1, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The Transformer (big) reports a single\u2011model BLEU score of **41.8** on the WMT\u202f2014 English\u2011to\u2011French task\u3010attention p.1\u3011."}
+{"request_id": "f3df60c0fa96", "t_ms": 9077.1, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 9077.3}
+{"request_id": "892bff5c2781", "t_ms": 0.0, "event": "arrive", "question_id": "q03", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "892bff5c2781", "t_ms": 0.2, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "892bff5c2781", "t_ms": 9847.4, "event": "queue_exit", "admitted": true, "queued_ms": 9847.2}
+{"request_id": "892bff5c2781", "t_ms": 9848.4, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "892bff5c2781", "t_ms": 9850.6, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "892bff5c2781", "t_ms": 9850.8, "event": "gate", "best_score": 0.8, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "892bff5c2781", "t_ms": 9850.9, "event": "provider_start", "attempt": 0}
+{"request_id": "892bff5c2781", "t_ms": 10335.6, "event": "first_token"}
+{"request_id": "892bff5c2781", "t_ms": 10392.0, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1403, "tokens_out": 86}
+{"request_id": "892bff5c2781", "t_ms": 10392.2, "event": "verify_start"}
+{"request_id": "892bff5c2781", "t_ms": 10392.3, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "Single\u2011head attention is 0.9\u202fBLEU points worse than the best attention setting in the Table\u202f3 ablations on the English\u2011German dev set, newstest2013. [attention p.9]"}
+{"request_id": "892bff5c2781", "t_ms": 10392.4, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 10392.4}
+{"request_id": "58c4a789515a", "t_ms": 0.0, "event": "arrive", "question_id": "q04", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "58c4a789515a", "t_ms": 0.2, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "58c4a789515a", "t_ms": 0.3, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "58c4a789515a", "t_ms": 0.5, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "58c4a789515a", "t_ms": 2.0, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "58c4a789515a", "t_ms": 2.1, "event": "gate", "best_score": 0.8811, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "58c4a789515a", "t_ms": 2.2, "event": "provider_start", "attempt": 0}
+{"request_id": "58c4a789515a", "t_ms": 4.4, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 20.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "58c4a789515a", "t_ms": 4.5, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 4.5}
+{"request_id": "f81b5be0bce3", "t_ms": 0.0, "event": "arrive", "question_id": "q05", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "f81b5be0bce3", "t_ms": 0.6, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "f81b5be0bce3", "t_ms": 9272.1, "event": "queue_exit", "admitted": true, "queued_ms": 9271.5}
+{"request_id": "f81b5be0bce3", "t_ms": 9273.0, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "f81b5be0bce3", "t_ms": 9274.7, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "f81b5be0bce3", "t_ms": 9274.8, "event": "gate", "best_score": 0.7593, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "f81b5be0bce3", "t_ms": 9275.0, "event": "provider_start", "attempt": 0}
+{"request_id": "f81b5be0bce3", "t_ms": 9777.7, "event": "first_token"}
+{"request_id": "f81b5be0bce3", "t_ms": 9853.7, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1383, "tokens_out": 117}
+{"request_id": "f81b5be0bce3", "t_ms": 9853.8, "event": "verify_start"}
+{"request_id": "f81b5be0bce3", "t_ms": 9854.0, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The papers do not report a practical end\u2011to\u2011end latency for Moshi. They do, however, state that the model is trained to achieve a theoretical latency of 160\u202fms (by pre\u2011training with an acoustic delay of 2 and fine\u2011tuning with an acoustic delay of 2)\u3010moshi p.26\u3011."}
+{"request_id": "f81b5be0bce3", "t_ms": 9854.0, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 9854.2}
+{"request_id": "5c962732701c", "t_ms": 0.0, "event": "arrive", "question_id": "q06", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "5c962732701c", "t_ms": 0.3, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "5c962732701c", "t_ms": 0.4, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "5c962732701c", "t_ms": 0.5, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "5c962732701c", "t_ms": 4.1, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "5c962732701c", "t_ms": 4.3, "event": "gate", "best_score": 0.7112, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "5c962732701c", "t_ms": 4.7, "event": "provider_start", "attempt": 0}
+{"request_id": "5c962732701c", "t_ms": 6.7, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 11.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "5c962732701c", "t_ms": 6.7, "event": "retry_wait_start", "wait_s": 11.0}
+{"request_id": "7900f52ccfb9", "t_ms": 0.0, "event": "arrive", "question_id": "q07", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "7900f52ccfb9", "t_ms": 0.6, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "7900f52ccfb9", "t_ms": 273.7, "event": "queue_exit", "admitted": true, "queued_ms": 273.0}
+{"request_id": "7900f52ccfb9", "t_ms": 274.2, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "5c962732701c", "t_ms": 11008.2, "event": "retry_wait_end"}
+{"request_id": "5c962732701c", "t_ms": 11011.1, "event": "queue_enter", "est_tokens": 3547, "queue_len": 0}
+{"request_id": "5c962732701c", "t_ms": 11011.2, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "5c962732701c", "t_ms": 11011.3, "event": "provider_start", "attempt": 1}
+{"request_id": "7900f52ccfb9", "t_ms": 288.4, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "7900f52ccfb9", "t_ms": 288.6, "event": "gate", "best_score": 1.0, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "7900f52ccfb9", "t_ms": 288.8, "event": "provider_start", "attempt": 0}
+{"request_id": "7900f52ccfb9", "t_ms": 299.8, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 12.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "7900f52ccfb9", "t_ms": 299.9, "event": "retry_wait_start", "wait_s": 12.0}
+{"request_id": "5c962732701c", "t_ms": 11515.2, "event": "first_token"}
+{"request_id": "5c962732701c", "t_ms": 11645.2, "event": "provider_end", "attempt": 1, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 3147, "tokens_out": 152}
+{"request_id": "5c962732701c", "t_ms": 11645.5, "event": "verify_start"}
+{"request_id": "5c962732701c", "t_ms": 11645.7, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The Mimi codec uses a Residual Vector Quantizer (RVQ) with the following settings:  \n- Number of quantizers \\(Q = 8\\)  \n- Codebook size per quantizer \\(N_A = 2048\\) centroids  \n- Latent frame rate of 12.5\u202fHz (i.e., 12.5 frames per second)  \n- Resulting bitrate of about 1.1\u202fkbps at 12.5\u202fHz [moshi p.10]"}
+{"request_id": "5c962732701c", "t_ms": 11645.8, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 11645.8}
+{"request_id": "2abbe5806736", "t_ms": 0.0, "event": "arrive", "question_id": "q08", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "2abbe5806736", "t_ms": 1.1, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "2abbe5806736", "t_ms": 1567.9, "event": "queue_exit", "admitted": true, "queued_ms": 1566.7}
+{"request_id": "2abbe5806736", "t_ms": 1571.3, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "7900f52ccfb9", "t_ms": 12306.7, "event": "retry_wait_end"}
+{"request_id": "7900f52ccfb9", "t_ms": 12314.6, "event": "queue_enter", "est_tokens": 1681, "queue_len": 0}
+{"request_id": "7900f52ccfb9", "t_ms": 12314.7, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "7900f52ccfb9", "t_ms": 12314.8, "event": "provider_start", "attempt": 1}
+{"request_id": "2abbe5806736", "t_ms": 1585.2, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "2abbe5806736", "t_ms": 1585.3, "event": "gate", "best_score": 0.709, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "2abbe5806736", "t_ms": 1585.4, "event": "provider_start", "attempt": 0}
+{"request_id": "7900f52ccfb9", "t_ms": 12328.7, "event": "provider_end", "attempt": 1, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 12.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "7900f52ccfb9", "t_ms": 12328.9, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 12329.1}
+{"request_id": "2abbe5806736", "t_ms": 2128.0, "event": "first_token"}
+{"request_id": "2abbe5806736", "t_ms": 2162.6, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1437, "tokens_out": 102}
+{"request_id": "2abbe5806736", "t_ms": 2162.9, "event": "verify_start"}
+{"request_id": "2abbe5806736", "t_ms": 2163.0, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "Helium is a 7\u2011billion\u2011parameter text\u2011only language model that was pretrained on 2.1\u202ftrillion tokens of public English data. [moshi p.3]"}
+{"request_id": "2abbe5806736", "t_ms": 2163.1, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 2163.5}
+{"request_id": "3383b2735d5d", "t_ms": 0.0, "event": "arrive", "question_id": "q09", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "3383b2735d5d", "t_ms": 0.8, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "3383b2735d5d", "t_ms": 2863.5, "event": "queue_exit", "admitted": true, "queued_ms": 2862.5}
+{"request_id": "3383b2735d5d", "t_ms": 2865.1, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "3383b2735d5d", "t_ms": 2869.0, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "3383b2735d5d", "t_ms": 2869.6, "event": "gate", "best_score": 0.3308, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "3383b2735d5d", "t_ms": 2870.2, "event": "provider_start", "attempt": 0}
+{"request_id": "3383b2735d5d", "t_ms": 3653.0, "event": "first_token"}
+{"request_id": "3383b2735d5d", "t_ms": 3701.4, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1453, "tokens_out": 72}
+{"request_id": "3383b2735d5d", "t_ms": 3701.7, "event": "verify_start"}
+{"request_id": "3383b2735d5d", "t_ms": 3703.7, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "H\u2011Net fixes the ratio\u2011loss weight at **\u03b1\u202f=\u202f0.03** in all of its experiments. [hnet p.8]"}
+{"request_id": "3383b2735d5d", "t_ms": 3703.8, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 3703.9}
+{"request_id": "98534e139f7f", "t_ms": 0.0, "event": "arrive", "question_id": "q10", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "98534e139f7f", "t_ms": 1.9, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "98534e139f7f", "t_ms": 2.4, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "98534e139f7f", "t_ms": 3.1, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "98534e139f7f", "t_ms": 7.7, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "98534e139f7f", "t_ms": 8.2, "event": "gate", "best_score": 0.6417, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "98534e139f7f", "t_ms": 8.6, "event": "provider_start", "attempt": 0}
+{"request_id": "98534e139f7f", "t_ms": 17.0, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 16.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "98534e139f7f", "t_ms": 17.3, "event": "retry_wait_start", "wait_s": 16.0}
+{"request_id": "04dde7334d77", "t_ms": 0.0, "event": "arrive", "question_id": "q11", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "04dde7334d77", "t_ms": 0.3, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "04dde7334d77", "t_ms": 5286.3, "event": "queue_exit", "admitted": true, "queued_ms": 5285.9}
+{"request_id": "04dde7334d77", "t_ms": 5288.5, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "98534e139f7f", "t_ms": 16021.8, "event": "retry_wait_end"}
+{"request_id": "98534e139f7f", "t_ms": 16026.3, "event": "queue_enter", "est_tokens": 3663, "queue_len": 0}
+{"request_id": "98534e139f7f", "t_ms": 16026.7, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "98534e139f7f", "t_ms": 16027.1, "event": "provider_start", "attempt": 1}
+{"request_id": "04dde7334d77", "t_ms": 5299.6, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "04dde7334d77", "t_ms": 5300.2, "event": "gate", "best_score": 0.6142, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "04dde7334d77", "t_ms": 5300.6, "event": "provider_start", "attempt": 0}
+{"request_id": "04dde7334d77", "t_ms": 5308.9, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 13.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "04dde7334d77", "t_ms": 5309.2, "event": "retry_wait_start", "wait_s": 13.0}
+{"request_id": "98534e139f7f", "t_ms": 16509.4, "event": "first_token"}
+{"request_id": "98534e139f7f", "t_ms": 16556.8, "event": "provider_end", "attempt": 1, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 3263, "tokens_out": 64}
+{"request_id": "98534e139f7f", "t_ms": 16557.6, "event": "verify_start"}
+{"request_id": "98534e139f7f", "t_ms": 16558.3, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The byte\u2011level 2\u2011stage H\u2011Net overtakes the BPE\u2011tokenized Transformer after about **30\u202fbillion training bytes**\u3010hnet p.12\u3011."}
+{"request_id": "98534e139f7f", "t_ms": 16558.7, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 16558.8}
+{"request_id": "263639043279", "t_ms": 0.0, "event": "arrive", "question_id": "q12", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "263639043279", "t_ms": 0.6, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "263639043279", "t_ms": 7576.7, "event": "queue_exit", "admitted": true, "queued_ms": 7575.7}
+{"request_id": "263639043279", "t_ms": 7577.9, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "04dde7334d77", "t_ms": 18312.0, "event": "retry_wait_end"}
+{"request_id": "04dde7334d77", "t_ms": 18315.0, "event": "queue_enter", "est_tokens": 1767, "queue_len": 0}
+{"request_id": "04dde7334d77", "t_ms": 18315.5, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "04dde7334d77", "t_ms": 18315.9, "event": "provider_start", "attempt": 1}
+{"request_id": "263639043279", "t_ms": 7584.6, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "263639043279", "t_ms": 7584.8, "event": "gate", "best_score": 0.6166, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "263639043279", "t_ms": 7585.0, "event": "provider_start", "attempt": 0}
+{"request_id": "04dde7334d77", "t_ms": 18324.7, "event": "provider_end", "attempt": 1, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 12.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "04dde7334d77", "t_ms": 18324.8, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 18324.9}
+{"request_id": "263639043279", "t_ms": 8364.6, "event": "first_token"}
+{"request_id": "263639043279", "t_ms": 8425.7, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1471, "tokens_out": 110}
+{"request_id": "263639043279", "t_ms": 8425.9, "event": "verify_start"}
+{"request_id": "263639043279", "t_ms": 8426.2, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "H\u2011Net\u2019s learned dynamic chunking compresses data to roughly **4.5\u20135\u202fbytes per chunk**. This resolution is comparable to that of standard BPE tokenizers, which also produce tokens of about the same byte\u2011length. [hnet p.3]"}
+{"request_id": "263639043279", "t_ms": 8426.3, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 8426.4}
+{"request_id": "4376d10aa969", "t_ms": 0.0, "event": "arrive", "question_id": "q13", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "4376d10aa969", "t_ms": 0.9, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "4376d10aa969", "t_ms": 8858.6, "event": "queue_exit", "admitted": true, "queued_ms": 8857.1}
+{"request_id": "4376d10aa969", "t_ms": 8860.9, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "4376d10aa969", "t_ms": 8864.7, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "4376d10aa969", "t_ms": 8865.1, "event": "gate", "best_score": 0.7193, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "4376d10aa969", "t_ms": 8866.3, "event": "provider_start", "attempt": 0}
+{"request_id": "4376d10aa969", "t_ms": 9298.3, "event": "first_token"}
+{"request_id": "4376d10aa969", "t_ms": 9353.8, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1358, "tokens_out": 108}
+{"request_id": "4376d10aa969", "t_ms": 9354.5, "event": "verify_start"}
+{"request_id": "4376d10aa969", "t_ms": 9355.2, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "Moshi settled on a theoretical latency of **160\u202fms**, pretraining it with an **acoustic delay of 2** and finetuning it with an **acoustic delay of 1** [moshi p.26]."}
+{"request_id": "4376d10aa969", "t_ms": 9355.6, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 9355.8}
+{"request_id": "0d976f0bd939", "t_ms": 0.0, "event": "arrive", "question_id": "q14", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "0d976f0bd939", "t_ms": 0.9, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "0d976f0bd939", "t_ms": 1.5, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "0d976f0bd939", "t_ms": 2.3, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "0d976f0bd939", "t_ms": 5.3, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "0d976f0bd939", "t_ms": 5.8, "event": "gate", "best_score": 0.6672, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "0d976f0bd939", "t_ms": 6.4, "event": "provider_start", "attempt": 0}
+{"request_id": "0d976f0bd939", "t_ms": 13.0, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 20.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "0d976f0bd939", "t_ms": 14.0, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 14.1}
+{"request_id": "fb7fcf02664f", "t_ms": 0.0, "event": "arrive", "question_id": "q15", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "fb7fcf02664f", "t_ms": 1.2, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "fb7fcf02664f", "t_ms": 9281.7, "event": "queue_exit", "admitted": true, "queued_ms": 9280.4}
+{"request_id": "fb7fcf02664f", "t_ms": 9283.9, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "fb7fcf02664f", "t_ms": 9287.7, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "fb7fcf02664f", "t_ms": 9288.3, "event": "gate", "best_score": 0.4334, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "fb7fcf02664f", "t_ms": 9288.8, "event": "provider_start", "attempt": 0}
+{"request_id": "fb7fcf02664f", "t_ms": 9739.0, "event": "first_token"}
+{"request_id": "fb7fcf02664f", "t_ms": 9915.6, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1461, "tokens_out": 154}
+{"request_id": "fb7fcf02664f", "t_ms": 9916.0, "event": "verify_start"}
+{"request_id": "fb7fcf02664f", "t_ms": 9916.5, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The original Transformer applies **post\u2011normalization** after each sub\u2011layer (i.e., a normalization layer is placed after the residual addition in every Transformer block) [hnet p.8]. H\u2011Net notes that modern large language models use **pre\u2011normalization**: they place a normalization layer (e.g., RMSNorm) before the residual addition and typically add a final normalization layer after all residual blocks, rather than the post\u2011normalization design of the original Transformer [hnet p.8]."}
+{"request_id": "fb7fcf02664f", "t_ms": 9916.7, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 9916.7}
+{"request_id": "bf276d41ee36", "t_ms": 0.0, "event": "arrive", "question_id": "q01", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "bf276d41ee36", "t_ms": 0.2, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "bf276d41ee36", "t_ms": 0.5, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "bf276d41ee36", "t_ms": 0.8, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "bf276d41ee36", "t_ms": 1.4, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "bf276d41ee36", "t_ms": 1.6, "event": "gate", "best_score": 0.3611, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "bf276d41ee36", "t_ms": 1.7, "event": "provider_start", "attempt": 0}
+{"request_id": "bf276d41ee36", "t_ms": 4.3, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 11.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "bf276d41ee36", "t_ms": 4.4, "event": "retry_wait_start", "wait_s": 11.0}
+{"request_id": "98343fd83734", "t_ms": 0.0, "event": "arrive", "question_id": "q02", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "98343fd83734", "t_ms": 1.0, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "98343fd83734", "t_ms": 271.9, "event": "queue_exit", "admitted": true, "queued_ms": 270.4}
+{"request_id": "98343fd83734", "t_ms": 273.4, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "bf276d41ee36", "t_ms": 11008.2, "event": "retry_wait_end"}
+{"request_id": "bf276d41ee36", "t_ms": 11012.9, "event": "queue_enter", "est_tokens": 3532, "queue_len": 0}
+{"request_id": "bf276d41ee36", "t_ms": 11013.5, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "bf276d41ee36", "t_ms": 11014.0, "event": "provider_start", "attempt": 1}
+{"request_id": "98343fd83734", "t_ms": 284.0, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "98343fd83734", "t_ms": 284.5, "event": "gate", "best_score": 0.6856, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "98343fd83734", "t_ms": 285.0, "event": "provider_start", "attempt": 0}
+{"request_id": "98343fd83734", "t_ms": 295.5, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 13.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "98343fd83734", "t_ms": 295.8, "event": "retry_wait_start", "wait_s": 13.0}
+{"request_id": "bf276d41ee36", "t_ms": 11638.6, "event": "first_token"}
+{"request_id": "bf276d41ee36", "t_ms": 11662.3, "event": "provider_end", "attempt": 1, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 3132, "tokens_out": 98}
+{"request_id": "bf276d41ee36", "t_ms": 11662.5, "event": "verify_start"}
+{"request_id": "bf276d41ee36", "t_ms": 11662.7, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The paper used the Adam optimizer with the following hyperparameters: \u03b2\u2081\u202f=\u202f0.9, \u03b2\u2082\u202f=\u202f0.98, and \u03b5\u202f=\u202f10\u207b\u2079 [attention p.7]."}
+{"request_id": "bf276d41ee36", "t_ms": 11662.8, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 11662.8}
+{"request_id": "1d8b7cd0d522", "t_ms": 0.0, "event": "arrive", "question_id": "q03", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "1d8b7cd0d522", "t_ms": 0.6, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "1d8b7cd0d522", "t_ms": 2563.6, "event": "queue_exit", "admitted": true, "queued_ms": 2562.8}
+{"request_id": "1d8b7cd0d522", "t_ms": 2564.5, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "98343fd83734", "t_ms": 13297.9, "event": "retry_wait_end"}
+{"request_id": "98343fd83734", "t_ms": 13299.1, "event": "queue_enter", "est_tokens": 1831, "queue_len": 0}
+{"request_id": "98343fd83734", "t_ms": 13299.1, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "98343fd83734", "t_ms": 13299.2, "event": "provider_start", "attempt": 1}
+{"request_id": "1d8b7cd0d522", "t_ms": 2567.4, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "1d8b7cd0d522", "t_ms": 2567.6, "event": "gate", "best_score": 0.8, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "1d8b7cd0d522", "t_ms": 2567.7, "event": "provider_start", "attempt": 0}
+{"request_id": "98343fd83734", "t_ms": 13304.7, "event": "provider_end", "attempt": 1, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 12.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "98343fd83734", "t_ms": 13304.8, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 13304.9}
+{"request_id": "1d8b7cd0d522", "t_ms": 2897.5, "event": "first_token"}
+{"request_id": "1d8b7cd0d522", "t_ms": 2946.2, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1403, "tokens_out": 86}
+{"request_id": "1d8b7cd0d522", "t_ms": 2946.7, "event": "verify_start"}
+{"request_id": "1d8b7cd0d522", "t_ms": 2947.0, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "Single\u2011head attention is 0.9\u202fBLEU points worse than the best attention setting in the Table\u202f3 ablations on the English\u2011German dev set, newstest2013. [attention p.9]"}
+{"request_id": "1d8b7cd0d522", "t_ms": 2947.2, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 2947.2}
+{"request_id": "0c3522b3d5c3", "t_ms": 0.0, "event": "arrive", "question_id": "q04", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "0c3522b3d5c3", "t_ms": 2.3, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "0c3522b3d5c3", "t_ms": 3839.1, "event": "queue_exit", "admitted": true, "queued_ms": 3836.8}
+{"request_id": "0c3522b3d5c3", "t_ms": 3839.7, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "0c3522b3d5c3", "t_ms": 3841.7, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "0c3522b3d5c3", "t_ms": 3841.9, "event": "gate", "best_score": 0.7446, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "0c3522b3d5c3", "t_ms": 3842.1, "event": "provider_start", "attempt": 0}
+{"request_id": "0c3522b3d5c3", "t_ms": 4353.6, "event": "first_token"}
+{"request_id": "0c3522b3d5c3", "t_ms": 4423.2, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1342, "tokens_out": 164}
+{"request_id": "0c3522b3d5c3", "t_ms": 4423.4, "event": "verify_start"}
+{"request_id": "0c3522b3d5c3", "t_ms": 4423.6, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The Transformer (big) model for English\u2011to\u2011French used a residual dropout rate of **Pdrop\u202f=\u202f0.1**\u3010attention p.8\u3011.  \nThe passages do not state the dropout rate used for the English\u2011to\u2011German big model, so no comparison can be made from the provided text."}
+{"request_id": "0c3522b3d5c3", "t_ms": 4423.6, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 4423.7}
+{"request_id": "a37e60e6a623", "t_ms": 0.0, "event": "arrive", "question_id": "q05", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "a37e60e6a623", "t_ms": 1.2, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "a37e60e6a623", "t_ms": 1.4, "event": "queue_exit", "admitted": true, "queued_ms": 0.1}
+{"request_id": "a37e60e6a623", "t_ms": 2.3, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "a37e60e6a623", "t_ms": 4.2, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "a37e60e6a623", "t_ms": 4.3, "event": "gate", "best_score": 0.7687, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "a37e60e6a623", "t_ms": 4.4, "event": "provider_start", "attempt": 0}
+{"request_id": "a37e60e6a623", "t_ms": 8.1, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 15.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "a37e60e6a623", "t_ms": 8.1, "event": "retry_wait_start", "wait_s": 15.0}
+{"request_id": "2f53b88131ff", "t_ms": 0.0, "event": "arrive", "question_id": "q06", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "2f53b88131ff", "t_ms": 0.9, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "2f53b88131ff", "t_ms": 4276.0, "event": "queue_exit", "admitted": true, "queued_ms": 4275.0}
+{"request_id": "2f53b88131ff", "t_ms": 4276.3, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "a37e60e6a623", "t_ms": 15009.2, "event": "retry_wait_end"}
+{"request_id": "a37e60e6a623", "t_ms": 15010.5, "event": "queue_enter", "est_tokens": 3576, "queue_len": 0}
+{"request_id": "a37e60e6a623", "t_ms": 15010.6, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "a37e60e6a623", "t_ms": 15010.6, "event": "provider_start", "attempt": 1}
+{"request_id": "2f53b88131ff", "t_ms": 4278.9, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "2f53b88131ff", "t_ms": 4278.9, "event": "gate", "best_score": 0.7083, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "2f53b88131ff", "t_ms": 4279.0, "event": "provider_start", "attempt": 0}
+{"request_id": "2f53b88131ff", "t_ms": 4282.7, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 13.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "2f53b88131ff", "t_ms": 4282.8, "event": "retry_wait_start", "wait_s": 13.0}
+{"request_id": "a37e60e6a623", "t_ms": 15895.6, "event": "first_token"}
+{"request_id": "a37e60e6a623", "t_ms": 15949.7, "event": "provider_end", "attempt": 1, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 3176, "tokens_out": 108}
+{"request_id": "a37e60e6a623", "t_ms": 15949.9, "event": "verify_start"}
+{"request_id": "a37e60e6a623", "t_ms": 15950.0, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The papers do not provide a concrete figure for Moshi\u2019s practical end\u2011to\u2011end latency. They do, however, state that the model\u2019s theoretical latency is 160\u202fms [moshi p.2] [moshi p.41]."}
+{"request_id": "a37e60e6a623", "t_ms": 15950.1, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 15950.2}
+{"request_id": "67ad42d0d05c", "t_ms": 0.0, "event": "arrive", "question_id": "q07", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "67ad42d0d05c", "t_ms": 0.4, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "67ad42d0d05c", "t_ms": 6550.0, "event": "queue_exit", "admitted": true, "queued_ms": 6549.5}
+{"request_id": "67ad42d0d05c", "t_ms": 6551.1, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "2f53b88131ff", "t_ms": 17284.7, "event": "retry_wait_end"}
+{"request_id": "2f53b88131ff", "t_ms": 17285.2, "event": "queue_enter", "est_tokens": 1751, "queue_len": 0}
+{"request_id": "2f53b88131ff", "t_ms": 17285.3, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "2f53b88131ff", "t_ms": 17285.4, "event": "provider_start", "attempt": 1}
+{"request_id": "67ad42d0d05c", "t_ms": 6553.0, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "67ad42d0d05c", "t_ms": 6553.0, "event": "gate", "best_score": 1.0, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "67ad42d0d05c", "t_ms": 6553.1, "event": "provider_start", "attempt": 0}
+{"request_id": "2f53b88131ff", "t_ms": 17289.8, "event": "provider_end", "attempt": 1, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 10.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "2f53b88131ff", "t_ms": 17289.9, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 17289.9}
+{"request_id": "67ad42d0d05c", "t_ms": 7259.5, "event": "first_token"}
+{"request_id": "67ad42d0d05c", "t_ms": 7297.0, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1281, "tokens_out": 71}
+{"request_id": "67ad42d0d05c", "t_ms": 7297.1, "event": "verify_start"}
+{"request_id": "67ad42d0d05c", "t_ms": 7297.3, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The Depth Transformer in Moshi has **6 layers** and a **model dimension of 1024** [moshi p.14]."}
+{"request_id": "67ad42d0d05c", "t_ms": 7297.3, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 7297.4}
+{"request_id": "f354b1e636ba", "t_ms": 0.0, "event": "arrive", "question_id": "q08", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "f354b1e636ba", "t_ms": 0.2, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "f354b1e636ba", "t_ms": 5824.9, "event": "queue_exit", "admitted": true, "queued_ms": 5824.7}
+{"request_id": "f354b1e636ba", "t_ms": 5826.0, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "f354b1e636ba", "t_ms": 5827.6, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "f354b1e636ba", "t_ms": 5827.7, "event": "gate", "best_score": 0.709, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "f354b1e636ba", "t_ms": 5827.8, "event": "provider_start", "attempt": 0}
+{"request_id": "f354b1e636ba", "t_ms": 6095.8, "event": "first_token"}
+{"request_id": "f354b1e636ba", "t_ms": 6139.7, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1437, "tokens_out": 102}
+{"request_id": "f354b1e636ba", "t_ms": 6139.9, "event": "verify_start"}
+{"request_id": "f354b1e636ba", "t_ms": 6140.0, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "Helium is a 7\u2011billion\u2011parameter text\u2011only language model that was pretrained on 2.1\u202ftrillion tokens of public English data. [moshi p.3]"}
+{"request_id": "f354b1e636ba", "t_ms": 6140.1, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 6140.1}
+{"request_id": "2c3f59d597af", "t_ms": 0.0, "event": "arrive", "question_id": "q09", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "2c3f59d597af", "t_ms": 0.2, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "2c3f59d597af", "t_ms": 0.3, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "2c3f59d597af", "t_ms": 0.5, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "2c3f59d597af", "t_ms": 1.6, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "2c3f59d597af", "t_ms": 1.8, "event": "gate", "best_score": 0.3267, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "2c3f59d597af", "t_ms": 1.9, "event": "provider_start", "attempt": 0}
+{"request_id": "2c3f59d597af", "t_ms": 4.5, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 18.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "2c3f59d597af", "t_ms": 4.6, "event": "retry_wait_start", "wait_s": 18.0}
+{"request_id": "80a002bbe6f7", "t_ms": 0.0, "event": "arrive", "question_id": "q10", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "80a002bbe6f7", "t_ms": 0.5, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "80a002bbe6f7", "t_ms": 7272.5, "event": "queue_exit", "admitted": true, "queued_ms": 7271.8}
+{"request_id": "80a002bbe6f7", "t_ms": 7273.6, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "2c3f59d597af", "t_ms": 18007.2, "event": "retry_wait_end"}
+{"request_id": "2c3f59d597af", "t_ms": 18009.2, "event": "queue_enter", "est_tokens": 3608, "queue_len": 0}
+{"request_id": "2c3f59d597af", "t_ms": 18009.3, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "2c3f59d597af", "t_ms": 18009.3, "event": "provider_start", "attempt": 1}
+{"request_id": "80a002bbe6f7", "t_ms": 7278.3, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "80a002bbe6f7", "t_ms": 7278.4, "event": "gate", "best_score": 0.6682, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "80a002bbe6f7", "t_ms": 7278.5, "event": "provider_start", "attempt": 0}
+{"request_id": "80a002bbe6f7", "t_ms": 7284.8, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 14.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "80a002bbe6f7", "t_ms": 7285.0, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 7285.1}
+{"request_id": "2c3f59d597af", "t_ms": 18876.0, "event": "first_token"}
+{"request_id": "2c3f59d597af", "t_ms": 18894.7, "event": "provider_end", "attempt": 1, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 3208, "tokens_out": 60}
+{"request_id": "2c3f59d597af", "t_ms": 18894.9, "event": "verify_start"}
+{"request_id": "2c3f59d597af", "t_ms": 18895.0, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "H\u2011Net fixes the ratio\u2011loss weight at **\u03b1\u202f=\u202f0.03** in all of its experiments. [hnet p.8]"}
+{"request_id": "2c3f59d597af", "t_ms": 18895.1, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 18895.1}
+{"request_id": "2fce76bf5d97", "t_ms": 0.0, "event": "arrive", "question_id": "q11", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "2fce76bf5d97", "t_ms": 0.2, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "2fce76bf5d97", "t_ms": 10552.9, "event": "queue_exit", "admitted": true, "queued_ms": 10552.6}
+{"request_id": "2fce76bf5d97", "t_ms": 10554.1, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "2fce76bf5d97", "t_ms": 10556.7, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "2fce76bf5d97", "t_ms": 10556.8, "event": "gate", "best_score": 0.6142, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "2fce76bf5d97", "t_ms": 10557.0, "event": "provider_start", "attempt": 0}
+{"request_id": "70360a21caad", "t_ms": 0.0, "event": "arrive", "question_id": "q12", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "70360a21caad", "t_ms": 0.7, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "70360a21caad", "t_ms": 1.0, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "70360a21caad", "t_ms": 1.6, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "70360a21caad", "t_ms": 5.1, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "70360a21caad", "t_ms": 5.3, "event": "gate", "best_score": 0.7223, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "70360a21caad", "t_ms": 5.6, "event": "provider_start", "attempt": 0}
+{"request_id": "70360a21caad", "t_ms": 10.7, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 24.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "70360a21caad", "t_ms": 10.9, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 11.0}
+{"request_id": "2fce76bf5d97", "t_ms": 11021.7, "event": "first_token"}
+{"request_id": "2fce76bf5d97", "t_ms": 11041.1, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1368, "tokens_out": 18}
+{"request_id": "2fce76bf5d97", "t_ms": 11041.2, "event": "verify_start"}
+{"request_id": "2fce76bf5d97", "t_ms": 11041.4, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "According to the retrieved passage, the answer is supported [hnet p.10]."}
+{"request_id": "2fce76bf5d97", "t_ms": 11041.4, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 11041.4}
+{"request_id": "5d1f9bf0ad11", "t_ms": 0.0, "event": "arrive", "question_id": "q13", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "5d1f9bf0ad11", "t_ms": 1.7, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "447bf0c44d11", "t_ms": 0.0, "event": "arrive", "question_id": "q14", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 1}
+{"request_id": "447bf0c44d11", "t_ms": 0.9, "event": "queue_enter", "est_tokens": 1750, "queue_len": 1}
+{"request_id": "5d1f9bf0ad11", "t_ms": 13278.7, "event": "queue_exit", "admitted": true, "queued_ms": 13276.5}
+{"request_id": "5d1f9bf0ad11", "t_ms": 13280.1, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "447bf0c44d11", "t_ms": 2547.9, "event": "queue_exit", "admitted": true, "queued_ms": 2546.9}
+{"request_id": "447bf0c44d11", "t_ms": 2550.7, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "5d1f9bf0ad11", "t_ms": 13286.6, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "5d1f9bf0ad11", "t_ms": 13286.8, "event": "gate", "best_score": 0.7193, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "5d1f9bf0ad11", "t_ms": 13287.0, "event": "provider_start", "attempt": 0}
+{"request_id": "447bf0c44d11", "t_ms": 2556.6, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "447bf0c44d11", "t_ms": 2556.8, "event": "gate", "best_score": 0.6472, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "447bf0c44d11", "t_ms": 2557.0, "event": "provider_start", "attempt": 0}
+{"request_id": "447bf0c44d11", "t_ms": 2563.3, "event": "provider_end", "attempt": 0, "status": "error", "http_status": 500, "limit_kind": null, "retry_after_s": null, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "447bf0c44d11", "t_ms": 2563.4, "event": "retry_wait_start", "wait_s": 0.162}
+{"request_id": "447bf0c44d11", "t_ms": 2726.5, "event": "retry_wait_end"}
+{"request_id": "447bf0c44d11", "t_ms": 2726.9, "event": "queue_enter", "est_tokens": 1686, "queue_len": 0}
+{"request_id": "447bf0c44d11", "t_ms": 2727.0, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "447bf0c44d11", "t_ms": 2727.1, "event": "provider_start", "attempt": 1}
+{"request_id": "447bf0c44d11", "t_ms": 2730.9, "event": "provider_end", "attempt": 1, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 8.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "447bf0c44d11", "t_ms": 2731.1, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 2731.1}
+{"request_id": "5d1f9bf0ad11", "t_ms": 13756.5, "event": "first_token"}
+{"request_id": "5d1f9bf0ad11", "t_ms": 13820.1, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1358, "tokens_out": 108}
+{"request_id": "5d1f9bf0ad11", "t_ms": 13820.4, "event": "verify_start"}
+{"request_id": "5d1f9bf0ad11", "t_ms": 13820.8, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "Moshi settled on a theoretical latency of **160\u202fms**, pretraining it with an **acoustic delay of 2** and finetuning it with an **acoustic delay of 1** [moshi p.26]."}
+{"request_id": "5d1f9bf0ad11", "t_ms": 13820.9, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 13821.0}
+{"request_id": "34a7e43eab4a", "t_ms": 0.0, "event": "arrive", "question_id": "q15", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "34a7e43eab4a", "t_ms": 1.9, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "34a7e43eab4a", "t_ms": 2.6, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "34a7e43eab4a", "t_ms": 3.7, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "34a7e43eab4a", "t_ms": 6.7, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "34a7e43eab4a", "t_ms": 7.2, "event": "gate", "best_score": 0.4396, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "34a7e43eab4a", "t_ms": 7.8, "event": "provider_start", "attempt": 0}
+{"request_id": "34a7e43eab4a", "t_ms": 15.3, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 13.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "34a7e43eab4a", "t_ms": 15.7, "event": "retry_wait_start", "wait_s": 13.0}
+{"request_id": "da67f17be3cd", "t_ms": 0.0, "event": "arrive", "question_id": "q01", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "da67f17be3cd", "t_ms": 0.6, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "da67f17be3cd", "t_ms": 2282.8, "event": "queue_exit", "admitted": true, "queued_ms": 2282.2}
+{"request_id": "da67f17be3cd", "t_ms": 2283.4, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "da67f17be3cd", "t_ms": 2284.8, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "da67f17be3cd", "t_ms": 2285.0, "event": "gate", "best_score": 0.3741, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "da67f17be3cd", "t_ms": 2285.1, "event": "provider_start", "attempt": 0}
+{"request_id": "34a7e43eab4a", "t_ms": 13020.2, "event": "retry_wait_end"}
+{"request_id": "34a7e43eab4a", "t_ms": 13020.3, "event": "queue_enter", "est_tokens": 3675, "queue_len": 0}
+{"request_id": "34a7e43eab4a", "t_ms": 13020.4, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "34a7e43eab4a", "t_ms": 13020.4, "event": "provider_start", "attempt": 1}
+{"request_id": "da67f17be3cd", "t_ms": 2292.1, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 13.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "da67f17be3cd", "t_ms": 2292.2, "event": "retry_wait_start", "wait_s": 13.0}
+{"request_id": "34a7e43eab4a", "t_ms": 13621.1, "event": "first_token"}
+{"request_id": "34a7e43eab4a", "t_ms": 13725.8, "event": "provider_end", "attempt": 1, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 3276, "tokens_out": 143}
+{"request_id": "34a7e43eab4a", "t_ms": 13726.0, "event": "verify_start"}
+{"request_id": "34a7e43eab4a", "t_ms": 13726.2, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The original Transformer applies **post\u2011normalization** after each sub\u2011layer, i.e., a normalization layer is placed *after* the residual addition within each block. H\u2011Net notes that modern large language models use **pre\u2011normalization**: they place a final normalization layer (e.g., RMSNorm) *after* all residual blocks, before the next sub\u2011layer, to balance feature norms and signal propagation [hnet p.8]."}
+{"request_id": "34a7e43eab4a", "t_ms": 13726.3, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 13726.4}
+{"request_id": "e2a437623623", "t_ms": 0.0, "event": "arrive", "question_id": "q02", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "e2a437623623", "t_ms": 0.6, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "e2a437623623", "t_ms": 4560.9, "event": "queue_exit", "admitted": true, "queued_ms": 4560.2}
+{"request_id": "e2a437623623", "t_ms": 4561.4, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "da67f17be3cd", "t_ms": 15293.8, "event": "retry_wait_end"}
+{"request_id": "da67f17be3cd", "t_ms": 15295.3, "event": "queue_enter", "est_tokens": 1775, "queue_len": 0}
+{"request_id": "da67f17be3cd", "t_ms": 15295.4, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "da67f17be3cd", "t_ms": 15295.4, "event": "provider_start", "attempt": 1}
+{"request_id": "e2a437623623", "t_ms": 4564.2, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "e2a437623623", "t_ms": 4564.3, "event": "gate", "best_score": 0.6856, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "e2a437623623", "t_ms": 4564.4, "event": "provider_start", "attempt": 0}
+{"request_id": "da67f17be3cd", "t_ms": 15300.6, "event": "provider_end", "attempt": 1, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 12.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "da67f17be3cd", "t_ms": 15300.7, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 15300.7}
+{"request_id": "e2a437623623", "t_ms": 5228.0, "event": "first_token"}
+{"request_id": "e2a437623623", "t_ms": 5274.5, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1431, "tokens_out": 86}
+{"request_id": "e2a437623623", "t_ms": 5274.9, "event": "verify_start"}
+{"request_id": "e2a437623623", "t_ms": 5275.2, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The Transformer (big) reports a single\u2011model BLEU score of **41.8** on the WMT\u202f2014 English\u2011to\u2011French task\u3010attention p.1\u3011."}
+{"request_id": "e2a437623623", "t_ms": 5275.3, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 5275.4}
+{"request_id": "2e717ea42d7c", "t_ms": 0.0, "event": "arrive", "question_id": "q03", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "2e717ea42d7c", "t_ms": 0.9, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "2e717ea42d7c", "t_ms": 5835.3, "event": "queue_exit", "admitted": true, "queued_ms": 5834.4}
+{"request_id": "2e717ea42d7c", "t_ms": 5837.4, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "2e717ea42d7c", "t_ms": 5843.4, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "2e717ea42d7c", "t_ms": 5843.8, "event": "gate", "best_score": 0.8, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "2e717ea42d7c", "t_ms": 5844.3, "event": "provider_start", "attempt": 0}
+{"request_id": "2e717ea42d7c", "t_ms": 6555.3, "event": "first_token"}
+{"request_id": "2e717ea42d7c", "t_ms": 6607.8, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1403, "tokens_out": 86}
+{"request_id": "2e717ea42d7c", "t_ms": 6608.1, "event": "verify_start"}
+{"request_id": "2e717ea42d7c", "t_ms": 6608.4, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "Single\u2011head attention is 0.9\u202fBLEU points worse than the best attention setting in the Table\u202f3 ablations on the English\u2011German dev set, newstest2013. [attention p.9]"}
+{"request_id": "2e717ea42d7c", "t_ms": 6608.5, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 6608.6}
+{"request_id": "5ee4a472f760", "t_ms": 0.0, "event": "arrive", "question_id": "q04", "scenario": "overload_retry_on", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "5ee4a472f760", "t_ms": 0.2, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "5ee4a472f760", "t_ms": 0.2, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "5ee4a472f760", "t_ms": 0.4, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "5ee4a472f760", "t_ms": 2.4, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "5ee4a472f760", "t_ms": 2.5, "event": "gate", "best_score": 0.8811, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "5ee4a472f760", "t_ms": 2.6, "event": "provider_start", "attempt": 0}
+{"request_id": "5ee4a472f760", "t_ms": 4.8, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 16.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "5ee4a472f760", "t_ms": 4.9, "event": "retry_wait_start", "wait_s": 16.0}
+{"request_id": "5153beb2ee57", "t_ms": 0.0, "event": "arrive", "question_id": "q05", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "5153beb2ee57", "t_ms": 1.8, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "5153beb2ee57", "t_ms": 5271.2, "event": "queue_exit", "admitted": true, "queued_ms": 5268.9}
+{"request_id": "5153beb2ee57", "t_ms": 5272.1, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "5ee4a472f760", "t_ms": 16007.2, "event": "retry_wait_end"}
+{"request_id": "5ee4a472f760", "t_ms": 16009.1, "event": "queue_enter", "est_tokens": 3402, "queue_len": 0}
+{"request_id": "5ee4a472f760", "t_ms": 16009.3, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "5ee4a472f760", "t_ms": 16009.4, "event": "provider_start", "attempt": 1}
+{"request_id": "5153beb2ee57", "t_ms": 5277.0, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "5153beb2ee57", "t_ms": 5277.1, "event": "gate", "best_score": 0.7593, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "5153beb2ee57", "t_ms": 5277.3, "event": "provider_start", "attempt": 0}
+{"request_id": "5153beb2ee57", "t_ms": 5284.8, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 14.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "5153beb2ee57", "t_ms": 5284.9, "event": "retry_wait_start", "wait_s": 14.0}
+{"request_id": "5ee4a472f760", "t_ms": 16587.0, "event": "first_token"}
+{"request_id": "5ee4a472f760", "t_ms": 16719.1, "event": "provider_end", "attempt": 1, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 3003, "tokens_out": 207}
+{"request_id": "5ee4a472f760", "t_ms": 16719.8, "event": "verify_start"}
+{"request_id": "5ee4a472f760", "t_ms": 16720.9, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The English\u2011to\u2011French big Transformer used a residual dropout rate of **Pdrop\u202f=\u202f0.1** [attention p.8].  \nIn contrast, the English\u2011to\u2011German big Transformer used a higher residual dropout rate of **Pdrop\u202f=\u202f0.3** [attention p.8]."}
+{"request_id": "5ee4a472f760", "t_ms": 16721.4, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 16721.4}
+{"request_id": "c7eea7b9cb38", "t_ms": 0.0, "event": "arrive", "question_id": "q06", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "c7eea7b9cb38", "t_ms": 0.3, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "c7eea7b9cb38", "t_ms": 8553.9, "event": "queue_exit", "admitted": true, "queued_ms": 8553.4}
+{"request_id": "c7eea7b9cb38", "t_ms": 8556.6, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "5153beb2ee57", "t_ms": 19289.7, "event": "retry_wait_end"}
+{"request_id": "5153beb2ee57", "t_ms": 19292.5, "event": "queue_enter", "est_tokens": 1783, "queue_len": 0}
+{"request_id": "5153beb2ee57", "t_ms": 19293.0, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "5153beb2ee57", "t_ms": 19293.3, "event": "provider_start", "attempt": 1}
+{"request_id": "c7eea7b9cb38", "t_ms": 8564.0, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "c7eea7b9cb38", "t_ms": 8564.5, "event": "gate", "best_score": 0.7083, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "c7eea7b9cb38", "t_ms": 8565.0, "event": "provider_start", "attempt": 0}
+{"request_id": "c7eea7b9cb38", "t_ms": 8572.4, "event": "provider_end", "attempt": 0, "status": "error", "http_status": 500, "limit_kind": null, "retry_after_s": null, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "c7eea7b9cb38", "t_ms": 8572.7, "event": "retry_wait_start", "wait_s": 0.075}
+{"request_id": "5153beb2ee57", "t_ms": 19305.8, "event": "provider_end", "attempt": 1, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 11.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "5153beb2ee57", "t_ms": 19305.9, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 19306.1}
+{"request_id": "c7eea7b9cb38", "t_ms": 8649.4, "event": "retry_wait_end"}
+{"request_id": "c7eea7b9cb38", "t_ms": 8650.0, "event": "queue_enter", "est_tokens": 1751, "queue_len": 0}
+{"request_id": "a32bce7af9c1", "t_ms": 0.0, "event": "arrive", "question_id": "q07", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 1}
+{"request_id": "a32bce7af9c1", "t_ms": 0.2, "event": "queue_enter", "est_tokens": 1750, "queue_len": 1}
+{"request_id": "c7eea7b9cb38", "t_ms": 19574.9, "event": "queue_exit", "admitted": true, "queued_ms": 10924.4}
+{"request_id": "c7eea7b9cb38", "t_ms": 19576.4, "event": "provider_start", "attempt": 1}
+{"request_id": "a32bce7af9c1", "t_ms": 8845.8, "event": "queue_exit", "admitted": true, "queued_ms": 8845.6}
+{"request_id": "a32bce7af9c1", "t_ms": 8846.4, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "a32bce7af9c1", "t_ms": 8848.1, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "a32bce7af9c1", "t_ms": 8848.3, "event": "gate", "best_score": 1.0, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "a32bce7af9c1", "t_ms": 8848.5, "event": "provider_start", "attempt": 0}
+{"request_id": "a32bce7af9c1", "t_ms": 8854.5, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 13.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "a32bce7af9c1", "t_ms": 8854.7, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 8854.7}
+{"request_id": "c7eea7b9cb38", "t_ms": 20002.8, "event": "provider_end", "attempt": 1, "status": "timeout", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "c7eea7b9cb38", "t_ms": 20003.9, "event": "done", "status": "timeout", "outcome": "gave_up_waiting", "total_ms": 20003.9}
+{"request_id": "6fb8e5e781ae", "t_ms": 0.0, "event": "arrive", "question_id": "q08", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 0}
+{"request_id": "6fb8e5e781ae", "t_ms": 1.0, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "7915b9276bd4", "t_ms": 0.0, "event": "arrive", "question_id": "q09", "scenario": "overload_retry_on", "setting": "A", "requested_setting": "B", "degraded": true, "queue_len": 1}
+{"request_id": "7915b9276bd4", "t_ms": 0.5, "event": "queue_enter", "est_tokens": 1750, "queue_len": 1}
+{"request_id": "6fb8e5e781ae", "t_ms": 11121.0, "event": "queue_exit", "admitted": true, "queued_ms": 11119.5}
+{"request_id": "6fb8e5e781ae", "t_ms": 11121.6, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "7915b9276bd4", "t_ms": 390.0, "event": "queue_exit", "admitted": true, "queued_ms": 389.4}
+{"request_id": "7915b9276bd4", "t_ms": 390.4, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "6fb8e5e781ae", "t_ms": 11123.7, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "6fb8e5e781ae", "t_ms": 11125.0, "event": "gate", "best_score": 0.709, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "6fb8e5e781ae", "t_ms": 11125.1, "event": "provider_start", "attempt": 0}
+{"request_id": "7915b9276bd4", "t_ms": 393.4, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "7915b9276bd4", "t_ms": 393.5, "event": "gate", "best_score": 0.3308, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "7915b9276bd4", "t_ms": 393.6, "event": "provider_start", "attempt": 0}
+{"request_id": "6fb8e5e781ae", "t_ms": 11131.0, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 1.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "6fb8e5e781ae", "t_ms": 11131.2, "event": "retry_wait_start", "wait_s": 1.0}
+{"request_id": "7915b9276bd4", "t_ms": 398.7, "event": "provider_end", "attempt": 0, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 1.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "7915b9276bd4", "t_ms": 398.8, "event": "retry_wait_start", "wait_s": 1.0}
+{"request_id": "6fb8e5e781ae", "t_ms": 12132.5, "event": "retry_wait_end"}
+{"request_id": "6fb8e5e781ae", "t_ms": 12133.3, "event": "queue_enter", "est_tokens": 1837, "queue_len": 0}
+{"request_id": "6fb8e5e781ae", "t_ms": 12133.8, "event": "queue_exit", "admitted": true, "queued_ms": 0.1}
+{"request_id": "6fb8e5e781ae", "t_ms": 12134.0, "event": "provider_start", "attempt": 1}
+{"request_id": "7915b9276bd4", "t_ms": 1403.9, "event": "retry_wait_end"}
+{"request_id": "7915b9276bd4", "t_ms": 1404.3, "event": "queue_enter", "est_tokens": 1853, "queue_len": 0}
+{"request_id": "7915b9276bd4", "t_ms": 1404.4, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "7915b9276bd4", "t_ms": 1404.5, "event": "provider_start", "attempt": 1}
+{"request_id": "7915b9276bd4", "t_ms": 1410.4, "event": "provider_end", "attempt": 1, "status": "rate_limited", "http_status": 429, "limit_kind": "tpm", "retry_after_s": 14.0, "tokens_in": 0, "tokens_out": 0}
+{"request_id": "7915b9276bd4", "t_ms": 1410.6, "event": "done", "status": "rate_limited", "outcome": "provider_429", "total_ms": 1410.6}
+{"request_id": "6fb8e5e781ae", "t_ms": 12658.5, "event": "first_token"}
+{"request_id": "6fb8e5e781ae", "t_ms": 12712.3, "event": "provider_end", "attempt": 1, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1437, "tokens_out": 102}
+{"request_id": "6fb8e5e781ae", "t_ms": 12712.8, "event": "verify_start"}
+{"request_id": "6fb8e5e781ae", "t_ms": 12713.0, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "Helium is a 7\u2011billion\u2011parameter text\u2011only language model that was pretrained on 2.1\u202ftrillion tokens of public English data. [moshi p.3]"}
+{"request_id": "6fb8e5e781ae", "t_ms": 12713.0, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 12713.2}

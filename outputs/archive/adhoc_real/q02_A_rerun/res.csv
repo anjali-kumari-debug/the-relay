@@ -1,0 +1,2 @@
+request_id,scenario,source,start_time,first_token_ms,total_ms,status,retries,tokens_in,tokens_out,retrieval_setting,answer_grade,question_id,queue_len_at_arrival,wait_ms,work_ms,retry_wait_ms,provider_ttft_ms,released_ms,outcome_detail
+42b080ed280c,probe_pipeline,real,2026-11-12T11:07:12.437158+00:00,644.2,713.8,ok,0,1425,130,A:250w/k3/rerank=no,,q02,0,0.0,713.8,0.0,595.9,713.8,answered

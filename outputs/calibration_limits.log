@@ -1,0 +1,48 @@
+rpm 200 ttft=Nonems total=227ms tok=74/1 
+rpm 200 ttft=Nonems total=234ms tok=74/1 
+rpm 200 ttft=Nonems total=328ms tok=74/1 
+rpm 200 ttft=Nonems total=352ms tok=74/1 
+rpm 200 ttft=Nonems total=353ms tok=74/1 
+rpm 200 ttft=Nonems total=359ms tok=74/1 
+rpm 200 ttft=Nonems total=367ms tok=74/1 
+rpm 200 ttft=Nonems total=483ms tok=74/1 
+rpm 200 ttft=Nonems total=488ms tok=74/1 
+rpm 200 ttft=Nonems total=492ms tok=74/1 
+rpm 200 ttft=Nonems total=498ms tok=74/1 
+rpm 200 ttft=Nonems total=499ms tok=74/1 
+rpm 200 ttft=Nonems total=500ms tok=74/1 
+rpm 200 ttft=Nonems total=609ms tok=74/1 
+rpm 200 ttft=Nonems total=709ms tok=74/1 
+rpm 200 ttft=Nonems total=710ms tok=74/1 
+rpm 200 ttft=Nonems total=1184ms tok=74/1 
+rpm 200 ttft=Nonems total=1373ms tok=74/1 
+rpm 200 ttft=Nonems total=1440ms tok=74/1 
+rpm 200 ttft=Nonems total=1482ms tok=74/1 
+rpm 200 ttft=Nonems total=1476ms tok=74/1 
+rpm 200 ttft=Nonems total=1487ms tok=74/1 
+rpm 200 ttft=Nonems total=1492ms tok=74/1 
+rpm 200 ttft=Nonems total=1702ms tok=74/1 
+rpm 200 ttft=Nonems total=1705ms tok=74/1 
+rpm 200 ttft=Nonems total=1714ms tok=74/1 
+rpm 429 ttft=Nonems total=2076ms tok=None/None {"error":{"message":"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01jbrk4adaek8atm7n10rzvtz2` service tier `on_demand` on requests per
+rpm 429 ttft=Nonems total=2082ms tok=None/None {"error":{"message":"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01jbrk4adaek8atm7n10rzvtz2` service tier `on_demand` on requests per
+rpm 429 ttft=Nonems total=2089ms tok=None/None {"error":{"message":"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01jbrk4adaek8atm7n10rzvtz2` service tier `on_demand` on requests per
+rpm 200 ttft=Nonems total=2212ms tok=74/1 
+rpm 200 ttft=Nonems total=2262ms tok=74/1 
+rpm 429 ttft=Nonems total=2328ms tok=None/None {"error":{"message":"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01jbrk4adaek8atm7n10rzvtz2` service tier `on_demand` on requests per
+rpm 429 ttft=Nonems total=2332ms tok=None/None {"error":{"message":"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01jbrk4adaek8atm7n10rzvtz2` service tier `on_demand` on requests per
+rpm 429 ttft=Nonems total=2341ms tok=None/None {"error":{"message":"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01jbrk4adaek8atm7n10rzvtz2` service tier `on_demand` on requests per
+rpm 429 ttft=Nonems total=3087ms tok=None/None {"error":{"message":"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01jbrk4adaek8atm7n10rzvtz2` service tier `on_demand` on requests per
+rpm 429 ttft=Nonems total=3341ms tok=None/None {"error":{"message":"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01jbrk4adaek8atm7n10rzvtz2` service tier `on_demand` on requests per
+rpm_recovery 429 ttft=Nonems total=51ms tok=None/None {"error":{"message":"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01jbrk4adaek8atm7n10rzvtz2` service tier `on_demand` on requests per
+rpm_recovery 200 ttft=Nonems total=766ms tok=74/1 
+tpm 200 ttft=472ms total=536ms tok=2117/60 
+tpm 200 ttft=598ms total=662ms tok=2117/60 
+tpm 200 ttft=864ms total=929ms tok=2117/60 
+tpm 429 ttft=Nonems total=1159ms tok=None/None {"error":{"message":"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01jbrk4adaek8atm7n10rzvtz2` service tier `on_demand` on tokens per m
+tpm 429 ttft=Nonems total=1379ms tok=None/None {"error":{"message":"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01jbrk4adaek8atm7n10rzvtz2` service tier `on_demand` on tokens per m
+tpm 429 ttft=Nonems total=2184ms tok=None/None {"error":{"message":"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01jbrk4adaek8atm7n10rzvtz2` service tier `on_demand` on tokens per m
+tpm 429 ttft=Nonems total=2339ms tok=None/None {"error":{"message":"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01jbrk4adaek8atm7n10rzvtz2` service tier `on_demand` on tokens per m
+tpm 429 ttft=Nonems total=3112ms tok=None/None {"error":{"message":"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01jbrk4adaek8atm7n10rzvtz2` service tier `on_demand` on tokens per m
+tpm_recovery 429 ttft=Nonems total=129ms tok=None/None {"error":{"message":"Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01jbrk4adaek8atm7n10rzvtz2` service tier `on_demand` on tokens per m
+tpm_recovery 200 ttft=667ms total=668ms tok=2117/30 

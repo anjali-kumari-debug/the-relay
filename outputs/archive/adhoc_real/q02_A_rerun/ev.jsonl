@@ -1,0 +1,12 @@
+{"request_id": "42b080ed280c", "t_ms": 0.0, "event": "arrive", "question_id": "q02", "scenario": "probe_pipeline", "setting": "A", "requested_setting": "A", "degraded": false, "queue_len": 0}
+{"request_id": "42b080ed280c", "t_ms": 0.2, "event": "queue_enter", "est_tokens": 1750, "queue_len": 0}
+{"request_id": "42b080ed280c", "t_ms": 0.2, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "42b080ed280c", "t_ms": 1.4, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "42b080ed280c", "t_ms": 48.1, "event": "retrieve_end", "n_hits": 3}
+{"request_id": "42b080ed280c", "t_ms": 48.2, "event": "gate", "best_score": 0.6856, "threshold": 0.5, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "42b080ed280c", "t_ms": 48.2, "event": "provider_start", "attempt": 0}
+{"request_id": "42b080ed280c", "t_ms": 644.2, "event": "first_token"}
+{"request_id": "42b080ed280c", "t_ms": 711.9, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 1425, "tokens_out": 130}
+{"request_id": "42b080ed280c", "t_ms": 712.5, "event": "verify_start"}
+{"request_id": "42b080ed280c", "t_ms": 713.4, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The Transformer (big) reports a single\u2011model BLEU score of **41.8** on the WMT\u202f2014 English\u2011to\u2011French task in the abstract [attention p.1], and a score of **41.0** in Table\u202f2 [attention p.8]."}
+{"request_id": "42b080ed280c", "t_ms": 713.8, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 713.8}

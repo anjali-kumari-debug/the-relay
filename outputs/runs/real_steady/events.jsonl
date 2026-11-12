@@ -1,0 +1,120 @@
+{"request_id": "34b1ea63351b", "t_ms": 0.0, "event": "arrive", "question_id": "q01", "scenario": "real_steady", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "34b1ea63351b", "t_ms": 0.2, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "34b1ea63351b", "t_ms": 0.4, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "34b1ea63351b", "t_ms": 1.7, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "34b1ea63351b", "t_ms": 3.3, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "34b1ea63351b", "t_ms": 3.4, "event": "gate", "best_score": 0.3611, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "34b1ea63351b", "t_ms": 3.4, "event": "provider_start", "attempt": 0}
+{"request_id": "34b1ea63351b", "t_ms": 474.7, "event": "first_token"}
+{"request_id": "34b1ea63351b", "t_ms": 534.4, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 2990, "tokens_out": 90}
+{"request_id": "34b1ea63351b", "t_ms": 534.8, "event": "verify_start"}
+{"request_id": "34b1ea63351b", "t_ms": 535.2, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The paper used the Adam optimizer with the following hyperparameters: \u03b2\u2081\u202f=\u202f0.9, \u03b2\u2082\u202f=\u202f0.98, and \u03f5\u202f=\u202f10\u207b\u2079 [attention p.7]."}
+{"request_id": "34b1ea63351b", "t_ms": 535.3, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 535.3}
+{"request_id": "ea4be7419126", "t_ms": 0.0, "event": "arrive", "question_id": "q02", "scenario": "real_steady", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "ea4be7419126", "t_ms": 0.9, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "ea4be7419126", "t_ms": 1.5, "event": "queue_exit", "admitted": true, "queued_ms": 0.1}
+{"request_id": "ea4be7419126", "t_ms": 2.3, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "ea4be7419126", "t_ms": 6.1, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "ea4be7419126", "t_ms": 6.5, "event": "gate", "best_score": 0.6803, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "ea4be7419126", "t_ms": 6.9, "event": "provider_start", "attempt": 0}
+{"request_id": "ea4be7419126", "t_ms": 738.6, "event": "first_token"}
+{"request_id": "ea4be7419126", "t_ms": 801.5, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 2640, "tokens_out": 117}
+{"request_id": "ea4be7419126", "t_ms": 802.1, "event": "verify_start"}
+{"request_id": "ea4be7419126", "t_ms": 803.0, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The Transformer (big) reports a single\u2011model BLEU score of **41.8** on the WMT\u202f2014 English\u2011to\u2011French test set, as stated in the abstract and shown in Table\u202f2. [attention p.1] [attention p.8]"}
+{"request_id": "ea4be7419126", "t_ms": 803.3, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 803.6}
+{"request_id": "5ee182a6e871", "t_ms": 0.0, "event": "arrive", "question_id": "q03", "scenario": "real_steady", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "5ee182a6e871", "t_ms": 1.6, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "5ee182a6e871", "t_ms": 1.9, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "5ee182a6e871", "t_ms": 2.6, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "5ee182a6e871", "t_ms": 4.9, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "5ee182a6e871", "t_ms": 5.2, "event": "gate", "best_score": 0.8014, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "5ee182a6e871", "t_ms": 5.5, "event": "provider_start", "attempt": 0}
+{"request_id": "5ee182a6e871", "t_ms": 660.6, "event": "first_token"}
+{"request_id": "5ee182a6e871", "t_ms": 674.2, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 3156, "tokens_out": 72}
+{"request_id": "5ee182a6e871", "t_ms": 674.7, "event": "verify_start"}
+{"request_id": "5ee182a6e871", "t_ms": 675.4, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "Single\u2011head attention is 0.9 BLEU points worse than the best multi\u2011head setting\u3010attention p.8\u3011."}
+{"request_id": "5ee182a6e871", "t_ms": 675.8, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 675.9}
+{"request_id": "1f9f03e4ca85", "t_ms": 0.0, "event": "arrive", "question_id": "q04", "scenario": "real_steady", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "1f9f03e4ca85", "t_ms": 1.9, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "1f9f03e4ca85", "t_ms": 2.4, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "1f9f03e4ca85", "t_ms": 3.3, "event": "retrieve_start", "papers": ["attention"]}
+{"request_id": "1f9f03e4ca85", "t_ms": 5.6, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "1f9f03e4ca85", "t_ms": 6.0, "event": "gate", "best_score": 0.8811, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "1f9f03e4ca85", "t_ms": 6.4, "event": "provider_start", "attempt": 0}
+{"request_id": "1f9f03e4ca85", "t_ms": 592.4, "event": "first_token"}
+{"request_id": "1f9f03e4ca85", "t_ms": 641.0, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 3269, "tokens_out": 214}
+{"request_id": "1f9f03e4ca85", "t_ms": 641.7, "event": "verify_start"}
+{"request_id": "1f9f03e4ca85", "t_ms": 642.6, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The Transformer (big) English\u2011to\u2011French model used a residual dropout rate of **Pdrop\u202f=\u202f0.1**\u3010attention p.8\u3011.  \nIn contrast, the English\u2011to\u2011German big model used a higher dropout rate of **Pdrop\u202f=\u202f0.3**\u3010attention p.8\u3011."}
+{"request_id": "1f9f03e4ca85", "t_ms": 643.0, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 643.1}
+{"request_id": "2d82196c31d2", "t_ms": 0.0, "event": "arrive", "question_id": "q05", "scenario": "real_steady", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "2d82196c31d2", "t_ms": 0.4, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "2d82196c31d2", "t_ms": 0.5, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "2d82196c31d2", "t_ms": 0.8, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "2d82196c31d2", "t_ms": 1.5, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "2d82196c31d2", "t_ms": 1.6, "event": "gate", "best_score": 0.7687, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "2d82196c31d2", "t_ms": 1.7, "event": "provider_start", "attempt": 0}
+{"request_id": "2d82196c31d2", "t_ms": 670.0, "event": "first_token"}
+{"request_id": "2d82196c31d2", "t_ms": 721.0, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 2897, "tokens_out": 107}
+{"request_id": "2d82196c31d2", "t_ms": 721.2, "event": "verify_start"}
+{"request_id": "2d82196c31d2", "t_ms": 721.5, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The papers do not report a practical end\u2011to\u2011end latency for Moshi. They do, however, state that Moshi\u2019s theoretical latency is 160\u202fms\u00a0[moshi p.2]\u00a0[moshi p.41]."}
+{"request_id": "2d82196c31d2", "t_ms": 721.6, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 721.6}
+{"request_id": "740aa79aa04f", "t_ms": 0.0, "event": "arrive", "question_id": "q06", "scenario": "real_steady", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "740aa79aa04f", "t_ms": 1.7, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "740aa79aa04f", "t_ms": 2.3, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "740aa79aa04f", "t_ms": 3.6, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "740aa79aa04f", "t_ms": 6.0, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "740aa79aa04f", "t_ms": 6.4, "event": "gate", "best_score": 0.7112, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "740aa79aa04f", "t_ms": 6.9, "event": "provider_start", "attempt": 0}
+{"request_id": "740aa79aa04f", "t_ms": 602.0, "event": "first_token"}
+{"request_id": "740aa79aa04f", "t_ms": 718.3, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 2900, "tokens_out": 153}
+{"request_id": "740aa79aa04f", "t_ms": 719.0, "event": "verify_start"}
+{"request_id": "740aa79aa04f", "t_ms": 720.0, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The Mimi codec uses a Residual Vector Quantizer (RVQ) with the following settings:  \n- Number of quantizers \\(Q = 8\\)  \n- Codebook size per quantizer \\(N_A = 2048\\) centroids  \n- Latent frame rate of 12.5\u202fHz (i.e., 12.5 frames per second)  \n- Resulting bitrate of approximately 1.1\u202fkbps at 12.5\u202fHz [moshi p.10]"}
+{"request_id": "740aa79aa04f", "t_ms": 720.4, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 720.5}
+{"request_id": "f6cfe14ff30b", "t_ms": 0.0, "event": "arrive", "question_id": "q07", "scenario": "real_steady", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "f6cfe14ff30b", "t_ms": 1.5, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "f6cfe14ff30b", "t_ms": 2.0, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "f6cfe14ff30b", "t_ms": 2.8, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "f6cfe14ff30b", "t_ms": 6.0, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "f6cfe14ff30b", "t_ms": 6.5, "event": "gate", "best_score": 1.0, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "f6cfe14ff30b", "t_ms": 6.9, "event": "provider_start", "attempt": 0}
+{"request_id": "f6cfe14ff30b", "t_ms": 615.1, "event": "first_token"}
+{"request_id": "f6cfe14ff30b", "t_ms": 653.2, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 2951, "tokens_out": 85}
+{"request_id": "f6cfe14ff30b", "t_ms": 653.7, "event": "verify_start"}
+{"request_id": "f6cfe14ff30b", "t_ms": 654.3, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The Depth Transformer in Moshi has **6 layers** and a **model dimension of 1024** [moshi p.13], [moshi p.12]."}
+{"request_id": "f6cfe14ff30b", "t_ms": 654.7, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 654.8}
+{"request_id": "9e1891374183", "t_ms": 0.0, "event": "arrive", "question_id": "q08", "scenario": "real_steady", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "9e1891374183", "t_ms": 1.6, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "9e1891374183", "t_ms": 1.9, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "9e1891374183", "t_ms": 2.5, "event": "retrieve_start", "papers": ["moshi"]}
+{"request_id": "9e1891374183", "t_ms": 4.2, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "9e1891374183", "t_ms": 4.4, "event": "gate", "best_score": 0.6496, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "9e1891374183", "t_ms": 4.7, "event": "provider_start", "attempt": 0}
+{"request_id": "9e1891374183", "t_ms": 698.5, "event": "first_token"}
+{"request_id": "9e1891374183", "t_ms": 738.8, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 2796, "tokens_out": 89}
+{"request_id": "9e1891374183", "t_ms": 739.2, "event": "verify_start"}
+{"request_id": "9e1891374183", "t_ms": 739.5, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "Helium is a 7\u202fB\u2011parameter text language model that was pretrained on 2.1\u202ftrillion tokens of public English data. [moshi p.2]"}
+{"request_id": "9e1891374183", "t_ms": 739.6, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 739.7}
+{"request_id": "000f8812bc04", "t_ms": 0.0, "event": "arrive", "question_id": "q09", "scenario": "real_steady", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "000f8812bc04", "t_ms": 1.0, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "000f8812bc04", "t_ms": 1.5, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "000f8812bc04", "t_ms": 2.3, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "000f8812bc04", "t_ms": 4.4, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "000f8812bc04", "t_ms": 4.9, "event": "gate", "best_score": 0.3267, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "000f8812bc04", "t_ms": 5.4, "event": "provider_start", "attempt": 0}
+{"request_id": "000f8812bc04", "t_ms": 664.6, "event": "first_token"}
+{"request_id": "000f8812bc04", "t_ms": 704.2, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 3098, "tokens_out": 78}
+{"request_id": "000f8812bc04", "t_ms": 705.0, "event": "verify_start"}
+{"request_id": "000f8812bc04", "t_ms": 705.9, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "H\u2011Net fixes the ratio\u2011loss weight at **\u03b1\u202f=\u202f0.03** in all of its experiments. [hnet p.8]"}
+{"request_id": "000f8812bc04", "t_ms": 706.4, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 706.5}
+{"request_id": "3baccef4c579", "t_ms": 0.0, "event": "arrive", "question_id": "q10", "scenario": "real_steady", "setting": "B", "requested_setting": "B", "degraded": false, "queue_len": 0}
+{"request_id": "3baccef4c579", "t_ms": 2.1, "event": "queue_enter", "est_tokens": 3220, "queue_len": 0}
+{"request_id": "3baccef4c579", "t_ms": 2.6, "event": "queue_exit", "admitted": true, "queued_ms": 0.0}
+{"request_id": "3baccef4c579", "t_ms": 3.7, "event": "retrieve_start", "papers": ["hnet"]}
+{"request_id": "3baccef4c579", "t_ms": 6.8, "event": "retrieve_end", "n_hits": 4}
+{"request_id": "3baccef4c579", "t_ms": 7.2, "event": "gate", "best_score": 0.6417, "threshold": 0.3, "weak": false, "expanded": false, "out_of_scope": false}
+{"request_id": "3baccef4c579", "t_ms": 7.7, "event": "provider_start", "attempt": 0}
+{"request_id": "3baccef4c579", "t_ms": 667.6, "event": "first_token"}
+{"request_id": "3baccef4c579", "t_ms": 721.3, "event": "provider_end", "attempt": 0, "status": "ok", "http_status": null, "limit_kind": null, "retry_after_s": null, "tokens_in": 3277, "tokens_out": 93}
+{"request_id": "3baccef4c579", "t_ms": 721.4, "event": "verify_start"}
+{"request_id": "3baccef4c579", "t_ms": 721.6, "event": "verify_end", "ok": true, "is_refusal": false, "problems": [], "raw": "The byte\u2011level 2\u2011stage H\u2011Net overtakes the perplexity (bits\u2011per\u2011byte) of the BPE\u2011tokenized Transformer after **30\u202fB training bytes**\u3010hnet p.12\u3011."}
+{"request_id": "3baccef4c579", "t_ms": 721.7, "event": "done", "status": "ok", "outcome": "answered", "total_ms": 721.8}
