@@ -1,0 +1,378 @@
+<html><head><meta charset='utf-8'><style>@page{size:A4;margin:11mm 12mm}body{font:8.4pt/1.28 -apple-system,Helvetica,Arial,sans-serif}
+h1{font-size:12pt;margin:0 0 3px}h2{font-size:9.6pt;margin:7px 0 2px}p{margin:2px 0}
+ul,ol{margin:2px 0 2px 16px;padding:0}li{margin:0}
+table{border-collapse:collapse;width:100%;font-size:6.9pt;margin:3px 0}td,th{border:1px solid #bbb;padding:1px 3px;vertical-align:top}
+th{background:#eee}code{font-size:7.4pt}</style></head><body><h1>The Relay — submission</h1>
+<p>Every table number regenerates from <code>outputs/results.csv</code> (<code>scripts/make_tables.py</code>); see README.</p>
+<h2>1 What I built and why</h2>
+<p><strong>Pipeline:</strong> admission (Groq-mirroring token buckets, FIFO queue, 20 s patience) → analyse (local keyword routing) → <strong>retrieve</strong> (tool call <code>search_papers</code>, BM25 over page-tagged chunks) → evidence gate (weak → expand once, else refuse without a model call) → draft (Groq <code>openai/gpt-oss-20b</code>, streamed) → verify (local: every <code>[paper p.N]</code> must be a retrieved page, every multi-digit number must appear in a cited passage; fail → one revise, else refuse).
+<strong>The decision that shaped it most: tokens, not requests or latency, are the scarce resource.</strong> An answer costs ~3.3K tokens, so 8,000 TPM allows ~2.4 answers/min (RPM would allow 30) and the daily token limit ~60 answers. Hence one model call per answer, deterministic analysis and verification, and under pressure a cheaper retrieval setting (A) instead of turning people away. "Fast" = first token ≤ 1 s at p95 when not overloaded; nobody waits over 20 s.</p>
+<h2>2 The real service and my stand-in</h2>
+<p>Found by hitting each limit (<code>scripts/calibrate_groq.py</code>, 80 requests; TPD by really exhausting the day) and reading headers and 429 bodies (<code>outputs/calibration.jsonl</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Limit</th>
+<th>Value you found</th>
+<th>How you found it</th>
+<th>Confidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Requests per minute</td>
+<td>30</td>
+<td>36 concurrent → 8 × 429 "RPM: Limit 30"</td>
+<td>high</td>
+</tr>
+<tr>
+<td>Tokens per minute</td>
+<td>8,000</td>
+<td>header; 429 "Limit 8000, Used 6389, Requested 2177" (= prompt + max tokens)</td>
+<td>high</td>
+</tr>
+<tr>
+<td>Requests per day</td>
+<td>1,000</td>
+<td>header; <code>remaining</code> 966 → 937 over 36 calls, 28 ok: 429s not counted</td>
+<td>high</td>
+</tr>
+<tr>
+<td>Tokens per day</td>
+<td>200,000</td>
+<td>real 429 "Limit 200000, Used 199792 … try again in 36m30s"</td>
+<td>high</td>
+</tr>
+<tr>
+<td>Requests in flight at once</td>
+<td>≥ 12, none refused for concurrency</td>
+<td>12 concurrent: all 200, 388 → 2,375 ms (queued)</td>
+<td>medium</td>
+</tr>
+<tr>
+<td>What it returns when a limit is hit</td>
+<td>429 + <code>retry-after</code> + JSON naming limit, used, requested, wait</td>
+<td>captured for all three</td>
+<td>high</td>
+</tr>
+<tr>
+<td>Time until it recovers</td>
+<td>RPM 2.8 s; TPM 3.8 s; TPD 36.5 min for a 5K request</td>
+<td>polled to first 200; TPD <code>retry-after</code></td>
+<td>high; TPD medium</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Finding:</strong> every limit is a continuously refilling bucket, not a counter that resets. TPM refills at 133 tokens/s and TPD at 2.3 tokens/s, and each <code>retry-after</code> equals the deficit divided by the refill rate.</p>
+<p><strong>Stand-in</strong> (<code>src/relay/standin_server.py</code>): a Groq-compatible SSE server (same client, different <code>base_url</code>) enforcing the measured buckets with Groq-shaped 429s. Calibrated: first token lognormal (median 420 / p95 800 ms; real p50 404/519 ms) + 58 ms per 1K prompt tokens (Groq <code>prompt_time</code>); ~1 token/chunk; 1.17× slower per extra request in flight above 2 (12-concurrent probe). It replays the recorded real answer per question and setting, so its rows carry real grades. Synthetic faults, never seen on Groq: 1% 5xx, 3% slow successes.
+<strong>Where it differs most:</strong> Groq's <code>queue_time</code> is 60–70% of its first-token time and depends on other tenants; mine only on my own traffic. Real 429s took 2–3 s under concurrency; mine are instant. Unmeasured: I assume unused <code>max_completion_tokens</code> are refunded to the TPM bucket, and Table 2's overload capacity depends on it.</p>
+<h2>3 Results</h2>
+<p>Real: <code>real_steady</code>, <code>real_daily_exhausted</code> and Table 3. All else: 15-minute open-loop stand-in runs. p50/p95/p99, n in brackets. First token = the model's first token; the person sees the reply only after verification (<code>released_ms</code> ≈ total), the price of never sending an unchecked answer. First token covers <code>ok</code> rows, total covers all rows, so instant 429s put <code>overload_retry_off</code>'s total p50 below its first-token p50.</p>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Real or stand-in</th>
+<th>Requests sent</th>
+<th>Duration (s)</th>
+<th>Offered rate per min</th>
+<th>First token ms p50 / p95 / p99</th>
+<th>Total time ms p50 / p95 / p99</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>steady</td>
+<td>Stand-in</td>
+<td>21</td>
+<td>895.0</td>
+<td>1.4</td>
+<td>604 / 830 / 1,043 (n=21)</td>
+<td>640 / 934 / 1,120 (n=21)</td>
+</tr>
+<tr>
+<td>burst</td>
+<td>Stand-in</td>
+<td>30</td>
+<td>896.3</td>
+<td>2.0</td>
+<td>615 / 10,142 / 17,424 (n=14)</td>
+<td>20,002 / 20,003 / 20,004 (n=30)</td>
+</tr>
+<tr>
+<td>sustained_overload</td>
+<td>Stand-in</td>
+<td>84</td>
+<td>905.8</td>
+<td>5.7</td>
+<td>13,717 / 19,090 / 19,415 (n=73)</td>
+<td>14,759 / 20,003 / 20,004 (n=84)</td>
+</tr>
+<tr>
+<td>rpm_halved</td>
+<td>Stand-in</td>
+<td>21</td>
+<td>914.4</td>
+<td>1.4</td>
+<td>3,984 / 13,917 / 14,454 (n=16)</td>
+<td>5,980 / 20,005 / 20,006 (n=21)</td>
+</tr>
+<tr>
+<td>daily_exhausted</td>
+<td>Stand-in</td>
+<td>30</td>
+<td>290.0</td>
+<td>6.2</td>
+<td>not measured</td>
+<td>2 / 3 / 3 (n=30)</td>
+</tr>
+<tr>
+<td>real_steady</td>
+<td>Real</td>
+<td>10</td>
+<td>270.7</td>
+<td>2.2</td>
+<td>663 / 721 / 735 (n=10)</td>
+<td>714 / 775 / 798 (n=10)</td>
+</tr>
+<tr>
+<td>overload_retry_on</td>
+<td>Stand-in</td>
+<td>84</td>
+<td>892.8</td>
+<td>5.7</td>
+<td>9,739 / 18,583 / 18,924 (n=57)</td>
+<td>9,798 / 18,868 / 19,430 (n=84)</td>
+</tr>
+<tr>
+<td>overload_retry_off</td>
+<td>Stand-in</td>
+<td>84</td>
+<td>891.6</td>
+<td>5.7</td>
+<td>642 / 1,758 / 3,598 (n=43)</td>
+<td>391 / 1,158 / 3,151 (n=84)</td>
+</tr>
+<tr>
+<td>real_daily_exhausted</td>
+<td>Real</td>
+<td>3</td>
+<td>40.0</td>
+<td>4.5</td>
+<td>not measured</td>
+<td>2 / 93 / 101 (n=3)</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Real or stand-in</th>
+<th>Succeeded %</th>
+<th>Rate-limited %</th>
+<th>Timed out or given up %</th>
+<th>Other errors %</th>
+<th>Retries per request (mean)</th>
+<th>Peak queue length</th>
+<th>Tokens per answer (mean)</th>
+<th>Cost per 1,000 answers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>steady</td>
+<td>Stand-in</td>
+<td>100.0%</td>
+<td>0.0%</td>
+<td>0.0%</td>
+<td>0.0%</td>
+<td>0.00</td>
+<td>0</td>
+<td>3,192</td>
+<td>$0 (free tier); paid: not measured</td>
+</tr>
+<tr>
+<td>burst</td>
+<td>Stand-in</td>
+<td>46.7%</td>
+<td>0.0%</td>
+<td>53.3%</td>
+<td>0.0%</td>
+<td>0.00</td>
+<td>17</td>
+<td>2,945</td>
+<td>$0 (free tier); paid: not measured</td>
+</tr>
+<tr>
+<td>sustained_overload</td>
+<td>Stand-in</td>
+<td>86.9%</td>
+<td>0.0%</td>
+<td>13.1%</td>
+<td>0.0%</td>
+<td>0.01</td>
+<td>1</td>
+<td>1,559</td>
+<td>$0 (free tier); paid: not measured</td>
+</tr>
+<tr>
+<td>rpm_halved</td>
+<td>Stand-in</td>
+<td>76.2%</td>
+<td>4.8%</td>
+<td>19.0%</td>
+<td>0.0%</td>
+<td>0.05</td>
+<td>0</td>
+<td>3,096</td>
+<td>$0 (free tier); paid: not measured</td>
+</tr>
+<tr>
+<td>daily_exhausted</td>
+<td>Stand-in</td>
+<td>0.0%</td>
+<td>100.0%</td>
+<td>0.0%</td>
+<td>0.0%</td>
+<td>0.00</td>
+<td>0</td>
+<td>not measured</td>
+<td>$0 (free tier); paid: not measured</td>
+</tr>
+<tr>
+<td>real_steady</td>
+<td>Real</td>
+<td>100.0%</td>
+<td>0.0%</td>
+<td>0.0%</td>
+<td>0.0%</td>
+<td>0.00</td>
+<td>0</td>
+<td>3,107</td>
+<td>$0 (free tier); paid: not measured</td>
+</tr>
+<tr>
+<td>overload_retry_on</td>
+<td>Stand-in</td>
+<td>67.9%</td>
+<td>31.0%</td>
+<td>1.2%</td>
+<td>0.0%</td>
+<td>0.40</td>
+<td>1</td>
+<td>2,130</td>
+<td>$0 (free tier); paid: not measured</td>
+</tr>
+<tr>
+<td>overload_retry_off</td>
+<td>Stand-in</td>
+<td>51.2%</td>
+<td>48.8%</td>
+<td>0.0%</td>
+<td>0.0%</td>
+<td>0.00</td>
+<td>0</td>
+<td>2,910</td>
+<td>$0 (free tier); paid: not measured</td>
+</tr>
+<tr>
+<td>real_daily_exhausted</td>
+<td>Real</td>
+<td>0.0%</td>
+<td>100.0%</td>
+<td>0.0%</td>
+<td>0.0%</td>
+<td>0.00</td>
+<td>0</td>
+<td>not measured</td>
+<td>$0 (free tier); paid: not measured</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Not guessable without running it:</strong> under sustained overload (5.7 offered/min vs ~2.4/min capacity) <strong>86.9% still succeeded</strong>, because admission degraded 81 of 84 requests to setting A (1,559 vs 3,192 tokens per answer), but the median person waited 14.8 s. In the burst the queue reached 17 and 16 of 30 gave up at 20 s, all still in our queue.</p>
+<h2>4 Where the time goes</h2>
+<p>Slowest real request (<code>6e2f7c76314f</code>, q11, setting C): <strong>12,037 ms = 10,408 waiting + 1,628 working + 0 retrying</strong>, and the delay came <strong>after</strong> the first token (820 ms). The draft finished at 889 ms but failed verification: it cited <code>[paper_id p.10]</code>, copying our prompt's placeholder, and gave BPIC 6.0 (the heuristic baseline's figure, not 4.8). The revise call needed a 3.5K-token reservation and waited 10.4 s in our own admission queue (<code>queue_enter</code> → <code>queue_exit</code>), then returned the same text and was refused. Every phase boundary is timestamped in <code>events.jsonl</code>; <code>scripts/slow_request.py</code> prints the split.</p>
+<h2>5 When a limit is hit</h2>
+<p><strong>Per-minute:</strong> requests wait FIFO for the bucket to refill. Below 30% TPM headroom new requests get setting A (weaker: 64.7% vs 76.5% correct). Whoever would exceed 20 s in the queue is dropped (<code>gave_up_in_queue</code>), so in a burst the latest arrivals lose. A provider 429 pauses all admissions for its <code>retry-after</code>.
+<strong>Per-day:</strong> nothing is queued or retried. The first TPD 429, or our guard at 90% of TPD, marks the day exhausted and everyone after gets the fixed reply in ~2 ms. In the real run Groq's 429 took 103 ms and the next two were refused locally in 1–2 ms. Our guard is a fixed counter, so it fired early (~180K tokens) and blocked 4 evaluation rows (I re-ran one and dropped q18). I reset it deliberately for <code>real_steady</code> to observe Groq's own response; Groq accepted ~20K more tokens because its bucket refills.</p>
+<h2>Retrieval: quality versus cost</h2>
+<table>
+<thead>
+<tr>
+<th>Retrieval setting</th>
+<th>Real or stand-in</th>
+<th>Questions asked</th>
+<th>Graded (n)</th>
+<th>Correct and cited %</th>
+<th>Wrong %</th>
+<th>Correctly refused %</th>
+<th>Wrongly refused %</th>
+<th>Tokens per answer (mean)</th>
+<th>First token ms p50 / p95</th>
+<th>Total time ms p50 / p95</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A:250w/k3/rerank=no</td>
+<td>Real</td>
+<td>18</td>
+<td>17</td>
+<td>64.7%</td>
+<td>11.8%</td>
+<td>11.8%</td>
+<td>11.8%</td>
+<td>1,655</td>
+<td>591 / 1,787 (n=17)</td>
+<td>603 / 1,792 (n=18)</td>
+</tr>
+<tr>
+<td>B:450w/k4/rerank=no</td>
+<td>Real</td>
+<td>18</td>
+<td>17</td>
+<td>76.5%</td>
+<td>5.9%</td>
+<td>11.8%</td>
+<td>5.9%</td>
+<td>3,327</td>
+<td>751 / 2,453 (n=17)</td>
+<td>806 / 4,097 (n=18)</td>
+</tr>
+<tr>
+<td>C:450w/k4/rerank=yes</td>
+<td>Real</td>
+<td>18 (19 rows)</td>
+<td>17</td>
+<td>70.6%</td>
+<td>11.8%</td>
+<td>11.8%</td>
+<td>5.9%</td>
+<td>3,387</td>
+<td>767 / 5,191 (n=17)</td>
+<td>791 / 11,591 (n=19)</td>
+</tr>
+</tbody>
+</table>
+<p>Real runs, paced 25 s apart. Grade shares are of 17 graded rows per setting (15 answerable, 2 unanswerable), so 11.8% correctly refused = both unanswerables refused.
+<strong>I chose B:</strong> most correct-and-cited (76.5%) and fewest wrong (5.9%). C's re-ranking mostly reordered the same chunks (its slow p95 is two requests queued behind a revise call). A halves the tokens but loses 12 points of correctness. <strong>Near the limit</strong> the system switches to A: a cheaper cited answer beats no answer.</p>
+<h2>How this library will mislead a naive retriever</h2>
+<ol>
+<li><strong>Different words for the same thing.</strong> "What <em>practical</em> latency does Moshi report?" Page 1 says "200ms in <em>practice</em>". BM25 missed it, so all three settings answered "not reported".</li>
+<li><strong>Symbols.</strong> "Adam beta1, beta2, epsilon?" The paper writes β1/β2/ϵ, so the best passage scored 0.36. My first gate (0.50) refused it before asking the model; I lowered the gate to 0.30.</li>
+<li><strong>One word, several meanings; one result, two numbers.</strong> "Transformer" appears in all three papers: on q15, one answer cited H-Net for a claim about the original Transformer. Attention v7 reports 41.8 BLEU in its abstract and Table 2 but 41.0 in §6.1. One real answer said "41.0 in Table 2" (<code>outputs/archive/adhoc_real/q02_A_rerun</code>).</li>
+</ol>
+<h2>6 Retries</h2>
+<p><strong>Policy:</strong> at most one retry, only on 429, timeout or 5xx; wait for <code>retry-after</code>, else full-jitter backoff (0.5–8 s); never on a daily limit, after tokens have streamed, or past the person's patience. SDK retries are off, so there is one retry layer.
+<strong>Where retrying made things worse</strong> (stand-in, client admission opened 10×, same 84 arrivals): retries raised completions from 43 to 57, but provider 429s rose from 41 to 58, because retried requests arrive just as the bucket refills. Each 429 restarts our global cool-down, so 34 requests waited over 5 s in our own queue against 0 without retries. <code>d4a9ed359c28</code> (q07) never retried, arrived to an empty queue and waited 10.3 s. Median first token went from 642 ms to 9,739 ms, and 15 requests that succeeded without retries failed with them. On real data, the revise in heading 4 doubled one request's tokens for the same answer.</p>
+<h2>7 What the person sees</h2>
+<p>At 3 pm, within ~2 ms: <em>"I can't answer right now: today's usage allowance for the language-model service has been used up. Daily allowances reset once a day, so please try again after the reset. I have not guessed an answer."</em> My own measurement shows this is wrong: the bucket refills continuously, so it should say "try again in about N minutes", with N from <code>retry-after</code> (36 min in my run). That is my next change.</p>
+<h2>8 What I'm unsure about, what I left out, what I learned</h2>
+<p><strong>Least certain assumption:</strong> that Groq's free-tier queueing stays near 300 ms under launch-day load from other tenants. If it grows, the stand-in's overload latencies are optimistic and 20 s patience drops more people than Table 2b shows. <strong>Deliberately not built:</strong> an embedding retriever (stemming would fix "practice/practical" without another model) and an answer cache (it saves tokens but hides the behaviour this brief asks me to measure). Three bugs found in the measured runs are listed in the README and left unfixed, so the code matches the numbers.
+<strong>New to me:</strong> [YOU: in your own words.]</p>
+<h2>Your feedback on Vaani</h2>
+<p>[YOU: visit https://www.vaani.dev/: what stood out, what confused you, one thing you'd change.]</p>
+<h2>How I worked with the assistant</h2>
+<p>Claude Code orchestrating (Opus), Sonnet sub-agents building modules against a shared contract (<code>SPEC.md</code>, <code>src/relay/types.py</code>), Haiku for docs research and candidate questions, an Opus advisor reviewing plan and results. Unedited history: <code>report/conversation_history.md</code> (raw JSONL in <code>report/raw_transcripts/</code>).
+[YOU, half a page: the three prompts that mattered most and why; one thing it got wrong that <strong>you</strong> caught and how; one decision where <strong>you</strong> overruled it; what is distinctly yours.]</p></body></html>
